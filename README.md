@@ -30,8 +30,12 @@ One should Depend upon Abstractions, Do not depend upon concretions.
 
 Refers to a specific form of decoupling software modules. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are inverted (i.e. reversed), thus rendering high-level modules independent of the low-level module implementation details. 
 
-Code and articles ware borrowed from this resource:
-https://gist.github.com/khusnetdinov/9d8f50fdcaab197871b31578f2e14d5d
-https://robots.thoughtbot.com/back-to-basics-solid
-https://subvisual.co/blog/posts/19-solid-principles-in-ruby
-http://blog.siyelo.com/solid-principles-in-ruby/
+Code and articles ware taken from this resources:
+
+[https://gist.github.com/khusnetdinov/9d8f50fdcaab197871b31578f2e14d5d] (https://gist.github.com/khusnetdinov/9d8f50fdcaab197871b31578f2e14d5d) 
+
+[https://robots.thoughtbot.com/back-to-basics-solid] (https://robots.thoughtbot.com/back-to-basics-solid) 
+
+[https://subvisual.co/blog/posts/19-solid-principles-in-ruby] (https://subvisual.co/blog/posts/19-solid-principles-in-ruby) 
+
+[http://blog.siyelo.com/solid-principles-in-ruby/] (http://blog.siyelo.com/solid-principles-in-ruby/) 
