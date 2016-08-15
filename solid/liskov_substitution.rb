@@ -1,44 +1,17 @@
-
-# If S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e., objects of type S may substitute objects of type T) without altering any of the desirable properties of that program (correctness, task performed, etc.).
-# This principle applies only to inheritance, so let's look at an example of inheritance that breaks it:
-
-class Animal
-  def walk
-    "walking_as_animal"
-  end
-end
-
-class Cat < Animal
-  def run
-    "run_as_cat"
-  end
-end
-
-# Subtypes must be substitutable for their base types, so they must have the same interface. Since Ruby does not have abstract methods, we can do it like so:
-
-class Animal
-  def walk
-    "walking_as_animal"
-  end
-
-  def run
-    rais NotImplementedError
-  end
-end
-
-class Cat < Animal
-  def run
-    "run_as_cat"
-  end
-end
-
-
-# One more example of substitution of sublass
+# Liskov’s principle tends to be the most difficult to understand. The principle states that you should be able to replace any instances of a parent class with an instance of one of its children without creating any unexpected or incorrect behaviors.
 
 class Rectangle
-  def initialize(width, height)
-    @width = width
+  def initialize(height, width)
     @height = height
+    @width = width
+  end
+
+  def set_height(height)
+    @height = height
+  end
+
+  def set_width(width)
+    @width = width
   end
 
   def square
@@ -46,18 +19,57 @@ class Rectangle
   end
 end
 
+# Solution
+
+# LSP says is if we know the interface of Rectangle, We need to be able to guess the interface of subtype class Square
+# Square.new(3).square => 9
+
 class Square < Rectangle
   def initialize(side)
     super(side, side)
   end
+
+  def set_height(height)
+    super(height)
+    @width = height
+  end
+
+  def set_width(width)
+    super(width)
+    @height = width
+  end
 end
 
-# rec = Rectangle.new(3, 4)
-# rec.square => 12
-# sqr = Square.new(3)
-# sqr.square => 9
+# Another common instance of a Liskov violation is raising an exception for an overridden method in a child class. It’s also not uncommon to see methods overridden with modified method signatures causing branching on type in classes that depend on objects of the parent’s type. All of these either lead to unstable code or unnecessary and ugly branching.
 
-# If I know the interface of person, I need to be able to guess the interface of student because
-# Square class is subtype of Rectangle
+class Animal
+  def walk
+    'walking_as_animal'
+  end
+end
+
+class Cat < Animal
+  def run
+    'run_as_cat'
+  end
+end
+
+# Solution
+
+class Animal
+  def walk
+    'walking_as_animal'
+  end
+
+  def run
+    raise NotImplementedError
+  end
+end
+
+class Cat < Animal
+  def run
+    'run_as_cat'
+  end
+end
 
 

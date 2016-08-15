@@ -1,22 +1,23 @@
-# Read first https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
-# Parts of code were taken from https://robots.thoughtbot.com/back-to-basics-solid
+# The Open/Closed Principle states that classes or methods should be open for extension, but closed for modification. This tells us we should strive for modular designs that make it possible for us to change the behavior of the system without making modifications to the classes themselves. This is generally achieved through the use of patterns such as the strategy pattern.
 
-# Open / Close Principle
-# Hint: The Open/Closed Principle states that classes or methods should be open for extension, but closed for modification.
+# In the below example we can see that we’ll have to modify our file parser anytime we add a client that reports usage information to us in a different file format. This violates the Open/Closed Principle.
 
 class FileParser
-  # Create instance with file with we are going to parse
+  attr_reader :file
+
   def initialize(file)
     @file = file
   end
 
-  # Now we check format of file and use suitable method
   def parse
-    case @file.format
+    # If we want add new parser we must to edit this method and in private method
+    case file.format
     when :xml
       parse_xml
     when :cvs
-      parce_cvs
+      parse_cvs
+    # when :json
+    #  parse_json
     else
       # Implementation
     end
@@ -24,6 +25,7 @@ class FileParser
   end
 
   private
+
   def parse_xml
     # Implementation
   end
@@ -31,23 +33,34 @@ class FileParser
   def parse_cvs
     # Implementation
   end
+
+  # New parse method
+  # def parse_json
+  #  # Implementation
+  # end
 end
 
-# parser = FileParser data.xml
-# data = parser.parse
+# Solution
 
-# FileParser check format of file and call suitable method for this file.
-# But what if we want to add new couple formats?
-# We must to modify this class and it breakes open close principle
+# With this refactor we’ve made it possible to add new parsers without changing any code. Any additional behavior will only require the addition of a new handler. This makes our FileParser reusable and in many cases will keep us in compliance with the Single Responsibility Principle as well by encouraging us to create smaller more focused classes.
 
-class FileParcer
-  # Crate instance with parser
+class FileParser
+  attr_reader :parser
+
   def initialize(parser)
     @parser = parser
   end
 
   def parse(file)
-    Data.new(@parser.parce file)
+    # Now if we want new parser just write new Class and pass it to method
+    Data.new(parser.parse file)
+  end
+end
+
+class JsonParser
+  # We write new class for extension solution.
+  def self.parse(file)
+    # Implementation
   end
 end
 
@@ -58,13 +71,7 @@ class XmlParser
 end
 
 class CvsParser
+  def self.parse(file)
   # Implementation
+  end
 end
-
-# Now we use it right
-# In this example we don't create instance just pass class, but we can also create xml parser instance and pass it to parser
-
-# xml_parser = FileParcer(XmlParser)
-# parser.parse file
-
-# Now if we want to pass new data type we just create new parcer and pass it to FileParser class
