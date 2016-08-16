@@ -51,6 +51,7 @@ Refers to a specific form of decoupling software modules. When following this pr
 
 * [http://blog.siyelo.com/solid-principles-in-ruby/] (http://blog.siyelo.com/solid-principles-in-ruby/)
 
+
 ## Threads
 
 Note about parallelism and concurrency: The primary difference between using processes versus threads is the way that memory is handled. At a high level, processes copy memory, while threads share memory. This makes process spawning slower than thread spawning, and leads to processes consuming more resources once running. Overall, threads incur less overhead than processes. This Thread API is a Ruby API. I've hinted that the different Ruby implementations have different underlying threading behaviours. That's certainly the case, but all the Ruby implementations we're looking at in this book support this same Thread API.
@@ -67,7 +68,7 @@ So if you have 8 threads busily working on a 8-core machine, only one thread and
 
 This has some very important implications for MRI. The biggest implication is that Ruby code will never run in parallel on MRI. The GIL prevents it.
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/threads/gil.rb)
 
 #### Mutex - Mutual Execution
 
@@ -75,7 +76,13 @@ Mutexes provide a mechanism for multiple threads to synchronize access to a crit
 
 The name 'mutex' is shorthand for 'mutual exclusion.' If you wrap some section of your code with a mutex, you guarantee that no two threads can enter that section at the same time.
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/threads/mutex.rb)
+
+#### Fibers
+
+Todo
+
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/threads/fibers.rb)
 
 #### Rails - Thread-safety in the framework
 
@@ -97,12 +104,14 @@ The problem with this is that there is no simple way to say with absolute certai
   Make sure memoization makes sense and a difference in your case. In many cases Rails actually caches the result anyway, so that you are not saving a whole lot if any resources with your memoization method.
   Don’t memoize to class variables or class instance variables. If you need to memoize something on the class level, use thread local variables (Thread.current[:baz]) instead. Be aware, though, that it is still kind of a global variable. So while it’s thread-safe, it still might not be good coding practice.
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/threads/rails.rb)
 
 #### Code and articles were taken from resources:
 
 [http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil] (http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil)
+
 [https://en.wikipedia.org/wiki/Global_interpreter_lock] (https://en.wikipedia.org/wiki/Global_interpreter_lock)
+
 [http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/] (http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
 
 
