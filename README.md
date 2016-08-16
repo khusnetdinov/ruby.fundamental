@@ -80,7 +80,7 @@ The name 'mutex' is shorthand for 'mutual exclusion.' If you wrap some section o
 
 #### Fibers
 
-Todo
+Fibers are primitives for implementing light weight cooperative concurrency in Ruby. Basically they are a means of creating code blocks that can be paused and resumed, much like threads. The main difference is that they are never preempted and that the scheduling must be done by the programmer and not the VM. As opposed to other stackless light weight concurrency models, each fiber comes with a small 4KB stack. This enables the fiber to be paused from deeply nested function calls within the fiber block.
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/threads/fibers.rb)
 
