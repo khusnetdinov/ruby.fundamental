@@ -1,10 +1,8 @@
 # Fundamental programming with ruby examples
-============================================
 
 This is repo keeps examples with description modern principles, patterns.
 
 ## Solid
---------
 
 In computer programming, SOLID (single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion) is a mnemonic acronym introduced by Michael Feathers for the "first five principles" named by Robert C. Martin in the early 2000s that stands for five basic principles of object-oriented programming and design. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time. The principles of SOLID are guidelines that can be applied while working on software to remove code smells by causing the programmer to refactor the software's source code until it is both legible and extensible. It is part of an overall strategy of agile and Adaptive Software Development.
 
@@ -54,7 +52,6 @@ Refers to a specific form of decoupling software modules. When following this pr
 * [http://blog.siyelo.com/solid-principles-in-ruby/] (http://blog.siyelo.com/solid-principles-in-ruby/)
 
 ## Threads
-----------
 
 Note about parallelism and concurrency: The primary difference between using processes versus threads is the way that memory is handled. At a high level, processes copy memory, while threads share memory. This makes process spawning slower than thread spawning, and leads to processes consuming more resources once running. Overall, threads incur less overhead than processes. This Thread API is a Ruby API. I've hinted that the different Ruby implementations have different underlying threading behaviours.
 
@@ -117,7 +114,6 @@ The problem with this is that there is no simple way to say with absolute certai
 * [http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/] (http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
 
 ## Design patterns
-------------------
 
 ### Creational pattern
 
