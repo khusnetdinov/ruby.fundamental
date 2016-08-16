@@ -108,10 +108,10 @@ The problem with this is that there is no simple way to say with absolute certai
 
 #### Code and articles were taken from resources:
 
-[http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil] (http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil)
+* [http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil] (http://www.jstorimer.com/blogs/workingwithcode/8085491-nobody-understands-the-gil)
 
-[https://en.wikipedia.org/wiki/Global_interpreter_lock] (https://en.wikipedia.org/wiki/Global_interpreter_lock)
+* [https://en.wikipedia.org/wiki/Global_interpreter_lock] (https://en.wikipedia.org/wiki/Global_interpreter_lock)
 
-[http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/] (http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
+* [http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/] (http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
 
 
