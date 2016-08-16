@@ -1,4 +1,6 @@
-# This simple fact is what makes threads so powerful, and also what makes them difficult to work with. I've already given you an idea of why threads are good; here's a simple program to illustrate their difficulty.
+# This simple fact is what makes threads so powerful, and also what makes them
+# difficult to work with. I've already given you an idea of why threads are
+# good; here's a simple program to illustrate their difficulty.
 
 shared_array = Array.new
 

@@ -1,4 +1,7 @@
-# Liskov’s principle tends to be the most difficult to understand. The principle states that you should be able to replace any instances of a parent class with an instance of one of its children without creating any unexpected or incorrect behaviors.
+# Liskov’s principle tends to be the most difficult to understand. The principle
+# states that you should be able to replace any instances of a parent class
+# with an instance of one of its children without creating any unexpected or
+# incorrect behaviors.
 
 class Rectangle
   def initialize(height, width)
@@ -21,7 +24,8 @@ end
 
 # Solution
 
-# LSP says is if we know the interface of Rectangle, We need to be able to guess the interface of subtype class Square
+# LSP says is if we know the interface of Rectangle, We need to be able to guess
+# the interface of subtype class Square
 # Square.new(3).square => 9
 
 class Square < Rectangle
@@ -40,7 +44,11 @@ class Square < Rectangle
   end
 end
 
-# Another common instance of a Liskov violation is raising an exception for an overridden method in a child class. It’s also not uncommon to see methods overridden with modified method signatures causing branching on type in classes that depend on objects of the parent’s type. All of these either lead to unstable code or unnecessary and ugly branching.
+# Another common instance of a Liskov violation is raising an exception for an
+# overridden method in a child class. It’s also not uncommon to see methods
+# overridden with modified method signatures causing branching on type in
+# classes that depend on objects of the parent’s type. All of these either
+# lead to unstable code or unnecessary and ugly branching.
 
 class Animal
   def walk

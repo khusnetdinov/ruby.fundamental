@@ -1,6 +1,12 @@
-# The Open/Closed Principle states that classes or methods should be open for extension, but closed for modification. This tells us we should strive for modular designs that make it possible for us to change the behavior of the system without making modifications to the classes themselves. This is generally achieved through the use of patterns such as the strategy pattern.
+# The Open/Closed Principle states that classes or methods should be open for
+# extension, but closed for modification. This tells us we should strive for
+# modular designs that make it possible for us to change the behavior of the
+# system without making modifications to the classes themselves. This is
+# generally achieved through the use of patterns such as the strategy pattern.
 
-# In the below example we can see that we’ll have to modify our file parser anytime we add a client that reports usage information to us in a different file format. This violates the Open/Closed Principle.
+# In the below example we can see that we’ll have to modify our file parser
+# anytime we add a client that reports usage information to us in a different
+# file format. This violates the Open/Closed Principle.
 
 class FileParser
   attr_reader :file
