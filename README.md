@@ -1,8 +1,10 @@
 # Fundamental programming with ruby examples
+============================================
 
 This is repo keeps examples with description modern principles, patterns.
 
 ## Solid
+--------
 
 In computer programming, SOLID (single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion) is a mnemonic acronym introduced by Michael Feathers for the "first five principles" named by Robert C. Martin in the early 2000s that stands for five basic principles of object-oriented programming and design. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time. The principles of SOLID are guidelines that can be applied while working on software to remove code smells by causing the programmer to refactor the software's source code until it is both legible and extensible. It is part of an overall strategy of agile and Adaptive Software Development.
 
@@ -51,8 +53,8 @@ Refers to a specific form of decoupling software modules. When following this pr
 
 * [http://blog.siyelo.com/solid-principles-in-ruby/] (http://blog.siyelo.com/solid-principles-in-ruby/)
 
-
 ## Threads
+----------
 
 Note about parallelism and concurrency: The primary difference between using processes versus threads is the way that memory is handled. At a high level, processes copy memory, while threads share memory. This makes process spawning slower than thread spawning, and leads to processes consuming more resources once running. Overall, threads incur less overhead than processes. This Thread API is a Ruby API. I've hinted that the different Ruby implementations have different underlying threading behaviours.
 
@@ -113,5 +115,154 @@ The problem with this is that there is no simple way to say with absolute certai
 * [https://en.wikipedia.org/wiki/Global_interpreter_lock] (https://en.wikipedia.org/wiki/Global_interpreter_lock)
 
 * [http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/] (http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
+
+## Design patterns
+------------------
+
+### Creational pattern
+
+In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or in added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation. Creational design patterns are composed of two dominant ideas. One is encapsulating knowledge about which concrete classes the system uses. Another is hiding how instances of these concrete classes are created and combined.
+
+[Read wiki] (https://en.wikipedia.org/wiki/Creational_pattern)
+
+#### Abstract factory pattern
+
+[See example] ()
+
+#### Builder pattern
+
+[See example] ()
+
+#### Factory pattern
+
+[See example] ()
+
+#### Prototype pattern
+
+[See example] ()
+
+#### Singleton pattern
+
+[See example] ()
+
+#### Not covered patterns:
+
+* [Lazy initialization] (https://en.wikipedia.org/wiki/Lazy_initialization)
+
+* [Multiton] (https://en.wikipedia.org/wiki/Multiton_pattern)
+
+* [Object pool] (https://en.wikipedia.org/wiki/Object_pool_pattern)
+
+* [Resource acquisition is initialization] (https://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization)
+
+* [Utility] (https://en.wikipedia.org/wiki/Utility_pattern)
+
+### Structural pattern
+
+In software engineering, structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
+
+[Read wiki] (https://en.wikipedia.org/wiki/Structural_pattern)
+
+#### Adapter pattern
+
+[See example] ()
+
+#### Bridge pattern
+
+[See example] ()
+
+#### Composite pattern
+
+[See example] ()
+
+#### Decorator pattern
+
+[See example] ()
+
+#### Facade pattern
+
+[See example] ()
+
+#### Flyweight pattern
+
+[See example] ()
+
+#### Proxy pattern
+
+[See example] ()
+
+#### Not covered patterns:
+
+* [Annotated Callback] (http://c2.com/cgi/wiki?AnnotatedCallback)
+
+* [Data Bus] (http://c2.com/cgi/wiki?DataBusPattern)
+
+* [Role Object] (http://c2.com/cgi/wiki?RoleObjectPattern)
+
+### Behavioral pattern 
+
+In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
+
+[Read wiki] (https://en.wikipedia.org/wiki/Behavioral_pattern)
+
+#### Chain of responsibility pattern
+
+[See example] ()
+
+#### Command pattern
+
+[See example] ()
+
+#### Interpreter patter
+
+[See example] ()
+
+#### Iterator patter
+
+[See example] ()
+
+#### Mediator patter
+
+[See example] ()
+
+#### Momento pattern
+
+[See example] ()
+
+#### Observer pattern
+
+[See example] ()
+
+#### State pattern
+
+[See example] ()
+
+#### Strategy patter
+
+[See example] ()
+
+#### Template method pattern
+
+[See example] ()
+
+#### Visitor patter
+
+[See example] ()
+
+#### Not covered patterns:
+
+* [Hierarchical visitor] (http://c2.com/cgi/wiki?HierarchicalVisitorPattern)
+
+####Code and articles were taken from resources:
+
+* [https://ru.wikipedia.org/wiki/Design_Patterns] (https://ru.wikipedia.org/wiki/Design_Patterns)
+
+* [https://en.wikipedia.org/wiki/Creational_pattern] (https://en.wikipedia.org/wiki/Creational_pattern)
+
+* [https://en.wikipedia.org/wiki/Structural_pattern] (https://en.wikipedia.org/wiki/Structural_pattern)
+
+* [https://en.wikipedia.org/wiki/Behavioral_pattern] (https://en.wikipedia.org/wiki/Behavioral_pattern)
+
+* [http://c2.com/cgi/wiki?CategoryPattern] (http://c2.com/cgi/wiki?CategoryPattern)
 
 
