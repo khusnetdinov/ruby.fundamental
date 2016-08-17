@@ -43,7 +43,7 @@ class JungleFactory
   end
 end
 
-
+# Factory of factories
 class EnvironmentFactory
   attr_reader :factories
 
