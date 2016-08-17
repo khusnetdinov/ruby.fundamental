@@ -174,31 +174,31 @@ In software engineering, structural design patterns are design patterns that eas
 
 #### Adapter pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/adapter.rb)
 
 #### Bridge pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/bridge.rb)
 
 #### Composite pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/composite.rb)
 
 #### Decorator pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/decorator.rb)
 
 #### Facade pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/facade.rb)
 
 #### Flyweight pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/flyweight.rb)
 
 #### Proxy pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/proxy.rb)
 
 #### Not covered patterns:
 
@@ -216,47 +216,47 @@ In software engineering, behavioral design patterns are design patterns that ide
 
 #### Chain of responsibility pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/chain_of_responsibility.rb)
 
 #### Command pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/command.rb)
 
 #### Interpreter patter
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/interpreter.rb)
 
 #### Iterator patter
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/iterator.rb)
 
 #### Mediator patter
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/mediator.rb)
 
 #### Momento pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/momento.rb)
 
 #### Observer pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/observer.rb)
 
 #### State pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/state.rb)
 
 #### Strategy patter
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/strategy.rb)
 
 #### Template method pattern
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/template_method.rb)
 
 #### Visitor patter
 
-[See example] ()
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/visitor.rb)
 
 #### Not covered patterns:
 
