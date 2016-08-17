@@ -141,11 +141,18 @@ In class-based programming, the factory method pattern is a creational pattern t
 
 #### Prototype pattern
 
-[See example] ()
+The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects. This pattern is used to:
+
+* avoid subclasses of an object creator in the client application, like the abstract factory pattern does.
+* avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it is prohibitively expensive for a given application.
+
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/prototype.rb)
 
 #### Singleton pattern
 
-[See example] ()
+Ensure a class only has one instance, and provide a global point of access to it. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects.
+
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/singleton.rb)
 
 #### Not covered patterns:
 
