@@ -186,6 +186,8 @@ The composite design pattern is a structural pattern used to represent objects t
 
 #### Decorator pattern
 
+In object-oriented programming, the decorator pattern (also known as Wrapper, an alternative naming shared with the Adapter pattern) is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
+
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/decorator.rb)
 
 #### Facade pattern
