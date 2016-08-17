@@ -10,15 +10,19 @@
 # Classes witch is used in abstract factories
 
 class Frog
+  # Implementation
 end
 
 class Algae
+  # Implementation
 end
 
 class Tiger
+  # Implementation
 end
 
 class Tree
+  # Implementation
 end
 
 # Abstract factory with realization pond environment
