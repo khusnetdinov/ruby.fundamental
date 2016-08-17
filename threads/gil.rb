@@ -23,4 +23,3 @@ puts shared_array.size
 # $ jruby => 7521
 # $ rbx => 8541
 
-

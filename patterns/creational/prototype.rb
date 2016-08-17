@@ -52,6 +52,3 @@ prototype.set :full_note, Note.new(1)
 
 note = prototype.get(:full_note)
 
-
-
-

@@ -33,7 +33,3 @@ end
 shape_factory = ShapeFactory.new
 square = shape_factory.get_shape :square
 
-
-
-
-

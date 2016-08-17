@@ -19,3 +19,4 @@ f.resume('First argument')
 f.resume('Second argument')
 f.resume
 # f.resume call error if try call one more time fiber is dead
+

@@ -62,3 +62,4 @@ computer_builder.add_cd = false
 computer_builder.memory_size = '12mb'
 
 computer = computer_builder.computer
+

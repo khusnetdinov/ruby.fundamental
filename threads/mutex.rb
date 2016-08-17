@@ -44,4 +44,3 @@ puts shared_array.size
 # $ jruby => 10000
 # $ rbx => 1000
 
-

@@ -45,3 +45,4 @@ class Report
     formatter.format body
   end
 end
+

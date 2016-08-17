@@ -93,3 +93,4 @@ class Technician
     computer_internals.change_hard_drive
   end
 end
+

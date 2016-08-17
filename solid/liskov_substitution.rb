@@ -80,4 +80,3 @@ class Cat < Animal
   end
 end
 
-

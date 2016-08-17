@@ -77,4 +77,3 @@ environment = EnvironmentFactory.new
 jungle = environment.get_factory(:jungle)
 jungle.new_animal
 
-

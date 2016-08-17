@@ -81,3 +81,4 @@ class CvsParser
   # Implementation
   end
 end
+
