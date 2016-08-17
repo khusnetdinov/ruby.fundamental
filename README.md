@@ -174,13 +174,9 @@ In software engineering, structural design patterns are design patterns that eas
 
 #### Adapter pattern
 
-In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class to be used as another interface.[1] It is often used to make existing classes work with others without modifying their source code.
+In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code.
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/adapter.rb)
-
-#### Bridge pattern
-
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/bridge.rb)
 
 #### Composite pattern
 
@@ -205,6 +201,8 @@ In software engineering, the adapter pattern is a software design pattern that a
 #### Not covered patterns:
 
 * [Annotated Callback] (http://c2.com/cgi/wiki?AnnotatedCallback)
+
+* [Bridge] (https://en.wikipedia.org/wiki/Bridge_pattern)
 
 * [Data Bus] (http://c2.com/cgi/wiki?DataBusPattern)
 
