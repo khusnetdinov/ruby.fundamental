@@ -180,6 +180,8 @@ In software engineering, the adapter pattern is a software design pattern that a
 
 #### Composite pattern
 
+The composite design pattern is a structural pattern used to represent objects that have a hierarchical tree structure. It allows for the uniform treatment of both individual leaf nodes and of branches composed of many nodes.
+
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/composite.rb)
 
 #### Decorator pattern
