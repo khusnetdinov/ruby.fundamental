@@ -244,6 +244,12 @@ In computer programming, the interpreter pattern is a design pattern that specif
 
 #### Iterator patter
 
+The iterator design pattern provides sequential access to elements within a container without exposing how the container actually represents the elements. The iterator can be thought of as a moveable pointer that allows access to elements encapsulated within a container.
+
+* External iterator: The iteration logic is contained in a separate class. The iteration class can be generalized to handle multiple object types as long as they allow indexing. It require the additional class to do the actual iterating, but they do allow for greater flexibility because you can control the iteration, which elements are iterated over and in what order.
+
+* Internal iterator: all the iterating logic occurs inside the aggregate object. Use a code block to pass your logic into the aggregate which then calls the block for each of it's elements.
+
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/iterator.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Iterator_pattern)
 
 #### Mediator patter
