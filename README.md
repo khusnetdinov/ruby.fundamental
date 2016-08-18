@@ -125,19 +125,19 @@ In software engineering, creational design patterns are design patterns that dea
 
 The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. In normal usage, the client software creates a concrete implementation of the abstract factory and then uses the generic interface of the factory to create the concrete objects that are part of the theme. The client doesn't know (or care) which concrete objects it gets from each of these internal factories, since it uses only the generic interfaces of their products. This pattern separates the details of implementation of a set of objects from their general usage and relies on object composition, as object creation is implemented in methods exposed in the factory interface.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/abstract_factory.rb) [Read wiki] (https://en.wikipedia.org/wiki/Abstract_factory_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/abstract_factory.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Abstract_factory_pattern)
 
 #### Builder pattern
 
 The builder pattern is an object creation software design pattern. Unlike the abstract factory pattern and the factory method pattern whose intention is to enable polymorphism, the intention of the builder pattern is to find a solution to the telescoping constructor anti-pattern[citation needed]. The telescoping constructor anti-pattern occurs when the increase of object constructor parameter combination leads to an exponential list of constructors. Instead of using numerous constructors, the builder pattern uses another object, a builder, that receives each initialization parameter step by step and then returns the resulting constructed object at once.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/builder.rb) [Read wiki] (https://en.wikipedia.org/wiki/Builder_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/builder.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Builder_pattern)
 
 #### Factory pattern
 
 In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/factory.rb) [Read wiki] (https://en.wikipedia.org/wiki/Factory_method_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/factory.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Factory_method_pattern)
 
 #### Prototype pattern
 
@@ -146,13 +146,13 @@ The prototype pattern is a creational design pattern in software development. It
 * avoid subclasses of an object creator in the client application, like the abstract factory pattern does.
 * avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it is prohibitively expensive for a given application.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/prototype.rb) [Read wiki] (https://en.wikipedia.org/wiki/Prototype_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/prototype.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Prototype_pattern)
 
 #### Singleton pattern
 
 Ensure a class only has one instance, and provide a global point of access to it. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/singleton.rb) [Read wiki] (https://en.wikipedia.org/wiki/Singleton_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/creational/singleton.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Singleton_pattern)
 
 #### Not covered patterns:
 
@@ -176,37 +176,37 @@ In software engineering, structural design patterns are design patterns that eas
 
 In software engineering, the adapter pattern is a software design pattern that allows the interface of an existing class to be used as another interface. It is often used to make existing classes work with others without modifying their source code.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/adapter.rb) [Read wiki] (https://en.wikipedia.org/wiki/Adapter_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/adapter.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Adapter_pattern)
 
 #### Composite pattern
 
 The composite design pattern is a structural pattern used to represent objects that have a hierarchical tree structure. It allows for the uniform treatment of both individual leaf nodes and of branches composed of many nodes.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/composite.rb) [Read wiki] (https://en.wikipedia.org/wiki/Composite_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/composite.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Composite_pattern)
 
 #### Decorator pattern
 
 In object-oriented programming, the decorator pattern (also known as Wrapper, an alternative naming shared with the Adapter pattern) is a design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/decorator.rb) [Read wiki] (https://en.wikipedia.org/wiki/Decorator_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/decorator.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Decorator_pattern)
 
 #### Facade pattern
 
 The Facade design pattern is often used when a system is very complex or difficult to understand because the system has a large number of interdependent classes or its source code is unavailable. This pattern hides the complexities of the larger system and provides a simpler interface to the client. It typically involves a single wrapper class which contains a set of members required by client. These members access the system on behalf of the facade client and hide the implementation details.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/facade.rb) [Read wiki] (https://en.wikipedia.org/wiki/Facade_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/facade.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Facade_pattern)
 
 #### Flyweight pattern
 
 In computer programming, flyweight is a software design pattern. A flyweight is an object that minimizes memory use by sharing as much data as possible with other similar objects; it is a way to use objects in large numbers when a simple repeated representation would use an unacceptable amount of memory. Often some parts of the object state can be shared, and it is common practice to hold them in external data structures and pass them to the flyweight objects temporarily when they are used.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/flyweight.rb) [Read wiki] (https://en.wikipedia.org/wiki/Flyweight_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/flyweight.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Flyweight_pattern)
 
 #### Proxy pattern
 
 A proxy, in its most general form, is a class functioning as an interface to something else. The proxy could interface to anything: a network connection, a large object in memory, a file, or some other resource that is expensive or impossible to duplicate. In short, a proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes. Use of the proxy can simply be forwarding to the real object, or can provide additional logic. In the proxy extra functionality can be provided, for example caching when operations on the real object are resource intensive, or checking preconditions before operations on the real object are invoked. For the client, usage of a proxy object is similar to using the real object, because both implement the same interface.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/proxy.rb) [Read wiki] (https://en.wikipedia.org/wiki/Proxy_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/proxy.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Proxy_pattern)
 
 #### Not covered patterns:
 
@@ -228,49 +228,49 @@ In software engineering, behavioral design patterns are design patterns that ide
 
 In object-oriented design, the chain-of-responsibility pattern is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain. A mechanism also exists for adding new processing objects to the end of this chain.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/chain_of_responsibility.rb) [Read wiki] (https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/chain_of_responsibility.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)
 
 #### Command pattern
 
 Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/command.rb) [Read wiki] (https://en.wikipedia.org/wiki/Command_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/command.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Command_pattern)
 
 #### Interpreter patter
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/interpreter.rb) [Read wiki] (https://en.wikipedia.org/wiki/Interpreter_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/interpreter.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Interpreter_pattern)
 
 #### Iterator patter
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/iterator.rb) [Read wiki] (https://en.wikipedia.org/wiki/Iterator_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/iterator.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Iterator_pattern)
 
 #### Mediator patter
  
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/mediator.rb) [Read wiki] (https://en.wikipedia.org/wiki/Mediator_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/mediator.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Mediator_pattern)
 
 #### Momento pattern
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/momento.rb) [Read wiki] (https://en.wikipedia.org/wiki/Memento_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/momento.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Memento_pattern)
 
 #### Observer pattern
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/observer.rb) [Read wiki] (https://en.wikipedia.org/wiki/Observer_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/observer.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Observer_pattern)
 
 #### State pattern
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/state.rb) [Read wiki] (https://en.wikipedia.org/wiki/State_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/state.rb) | [Read wiki] (https://en.wikipedia.org/wiki/State_pattern)
 
 #### Strategy patter
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/strategy.rb) [Read wiki] (https://en.wikipedia.org/wiki/Strategy_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/strategy.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Strategy_pattern)
 
 #### Template method pattern
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/template_method.rb) [Read wiki] (https://en.wikipedia.org/wiki/Template_method_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/template_method.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Template_method_pattern)
 
 #### Visitor patter
 
-[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/visitor.rb) [Read wiki] (https://en.wikipedia.org/wiki/Visitor_pattern)
+[See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/visitor.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Visitor_pattern)
 
 #### Not covered patterns:
 
