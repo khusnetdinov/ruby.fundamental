@@ -204,11 +204,7 @@ In computer programming, flyweight is a software design pattern. A flyweight is 
 
 #### Proxy pattern
 
-Protection Proxy: a protection proxy protects an object from unauthorized access. To ensure methods can only be run by authorized users, we can run an authorization check before messages are passed to the underlying object.
-
-Remote Proxy: remote proxies provides access to objects which are running on remote machines. A great example of a remote proxy is Distributed Ruby (DRb), which allows Ruby programs to communicate over a network. With DRb, the client machines runs a proxy which handles all of the network communications behind the scenes.
-
-Virtual Proxy: virtual proxies allow us to delay the creation of an object until it is absolutely necessary. This is useful when creating the object is computationaly expensive.
+# A proxy, in its most general form, is a class functioning as an interface to something else. The proxy could interface to anything: a network connection, a large object in memory, a file, or some other resource that is expensive or impossible to duplicate. In short, a proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes. Use of the proxy can simply be forwarding to the real object, or can provide additional logic. In the proxy extra functionality can be provided, for example caching when operations on the real object are resource intensive, or checking preconditions before operations on the real object are invoked. For the client, usage of a proxy object is similar to using the real object, because both implement the same interface.
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/structural/proxy.rb)
 
