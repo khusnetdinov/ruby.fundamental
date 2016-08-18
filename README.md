@@ -238,6 +238,8 @@ Encapsulate a request as an object, thereby allowing for the parameterization of
 
 #### Interpreter patter
 
+In computer programming, the interpreter pattern is a design pattern that specifies how to evaluate sentences in a language. The basic idea is to have a class for each symbol (terminal or nonterminal) in a specialized computer language. The syntax tree of a sentence in the language is an instance of the composite pattern and is used to evaluate (interpret) the sentence for a client.
+
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/interpreter.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Interpreter_pattern)
 
 #### Iterator patter
