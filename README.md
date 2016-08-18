@@ -226,6 +226,8 @@ In software engineering, behavioral design patterns are design patterns that ide
 
 #### Chain of responsibility pattern
 
+In object-oriented design, the chain-of-responsibility pattern is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain. A mechanism also exists for adding new processing objects to the end of this chain.
+
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/chain_of_responsibility.rb)
 
 #### Command pattern
@@ -283,5 +285,7 @@ In software engineering, behavioral design patterns are design patterns that ide
 * [https://en.wikipedia.org/wiki/Behavioral_pattern] (https://en.wikipedia.org/wiki/Behavioral_pattern)
 
 * [http://c2.com/cgi/wiki?CategoryPattern] (http://c2.com/cgi/wiki?CategoryPattern)
+
+* [https://gist.github.com/martindemello/7231bf0f407ca428b509] (https://gist.github.com/martindemello/7231bf0f407ca428b509)
 
 
