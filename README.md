@@ -32,15 +32,15 @@ This is repo keeps examples with description modern principles, patterns.
     - [Behavioral pattern](#behavioral-pattern)
       - [Chain of responsibility pattern](#chain-of-responsibility-pattern)
       - [Command pattern](#command-pattern)
-      - [Interpreter patter](#interpreter-patter)
-      - [Iterator patter](#iterator-patter)
-      - [Mediator patter](#mediator-patter)
+      - [Interpreter pattern](#interpreter-pattern)
+      - [Iterator pattern](#iterator-pattern)
+      - [Mediator pattern](#mediator-pattern)
       - [Momento pattern](#momento-pattern)
       - [Observer pattern](#observer-pattern)
       - [State pattern](#state-pattern)
-      - [Strategy patter](#strategy-patter)
+      - [Strategy pattern](#strategy-pattern)
       - [Template method pattern](#template-method-pattern)
-      - [Visitor patter](#visitor-patter)
+      - [Visitor pattern](#visitor-pattern)
 
 ## Threads
 
@@ -276,13 +276,13 @@ Encapsulate a request as an object, thereby allowing for the parameterization of
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/command.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Command_pattern)
 
-#### Interpreter patter
+#### Interpreter pattern
 
 In computer programming, the interpreter pattern is a design pattern that specifies how to evaluate sentences in a language. The basic idea is to have a class for each symbol (terminal or nonterminal) in a specialized computer language. The syntax tree of a sentence in the language is an instance of the composite pattern and is used to evaluate (interpret) the sentence for a client.
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/interpreter.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Interpreter_pattern)
 
-#### Iterator patter
+#### Iterator pattern
 
 The iterator design pattern provides sequential access to elements within a container without exposing how the container actually represents the elements. The iterator can be thought of as a moveable pointer that allows access to elements encapsulated within a container.
 
@@ -292,7 +292,7 @@ The iterator design pattern provides sequential access to elements within a cont
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/iterator.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Iterator_pattern)
 
-#### Mediator patter
+#### Mediator pattern
 
 Usually a program is made up of a large number of classes. So the logic and computation is distributed among these classes. However, as more classes are developed in a program, especially during maintenance and/or refactoring, the problem of communication between these classes may become more complex. This makes the program harder to read and maintain. Furthermore, it can become difficult to change the program, since any change may affect code in several other classes. With the mediator pattern, communication between objects is encapsulated with a mediator object. Objects no longer communicate directly with each other, but instead communicate through the mediator. This reduces the dependencies between communicating objects, thereby lowering the coupling.
  
@@ -316,7 +316,7 @@ The state pattern is a behavioral software design pattern that implements a stat
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/state.rb) | [Read wiki] (https://en.wikipedia.org/wiki/State_pattern)
 
-#### Strategy patter
+#### Strategy pattern
 
 In computer programming, the strategy pattern (also known as the policy pattern) is a software design pattern that enables an algorithm's behavior to be selected at runtime. The strategy pattern
 
@@ -336,7 +336,7 @@ In object-oriented programming, first a class is created that provides the basic
 
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/template_method.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Template_method_pattern)
 
-#### Visitor patter
+#### Visitor pattern
 
 n object-oriented programming and software engineering, the visitor design pattern is a way of separating an algorithm from an object structure on which it operates. A practical result of this separation is the ability to add new operations to existing object structures without modifying those structures. It is one way to follow the open/closed principle.
 
