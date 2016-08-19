@@ -292,6 +292,8 @@ For instance, a class that performs validation on incoming data may use a strate
 
 #### Template method pattern
 
+In object-oriented programming, first a class is created that provides the basic steps of an algorithm design. These steps are implemented using abstract methods. Later on, subclasses change the abstract methods to implement real actions. Thus the general algorithm is saved in one place but the concrete steps may be changed by the subclasses.
+
 [See example] (https://github.com/evncom/ruby.fundamental/blob/master/patterns/behavioral/template_method.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Template_method_pattern)
 
 #### Visitor patter
