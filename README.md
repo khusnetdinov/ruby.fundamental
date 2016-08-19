@@ -2,11 +2,51 @@
 
 This is repo keeps examples with description modern principles, patterns.
 
+#### Content:
+  - [Threads](#threads)
+    - [Green threads](#green-threads)
+    - [GIL - Global Interpreter Lock](#gil--global-interpreter-lock)
+    - [Mutex - Mutual Execution](#mutex--mutual-execution)
+    - [Fibers](#fibers)
+    - [Rails - Thread-safety in the framework](#rails---thread-safety-in-the-framework)
+  - [Solid principles](#solid)
+    - [SRP - Single responsibility principle](#srp---single-responsibility-principle)
+    - [OCP - Open/closed principle] (#ocp---openclosed-principle)
+    - [LSP - Liskov substitution principle](#lsp--liskov-substitution-principle)
+    - [ISP - Interface segregation principle](#isp---interface-segregation-principle)
+    - [DIP - Dependency inversion principle](#dip---dependency-inversion-principle)
+  - [Design patterns](#design-patterns)
+    - [Creational pattern](#creational-pattern)
+      - [Abstract factory pattern](#abstract-factory-pattern)
+      - [Builder pattern](#builder-pattern)
+      - [Factory pattern](#factory-pattern)
+      - [Prototype pattern](#prototype-pattern)
+      - [Singleton pattern](#singleton-pattern)
+    - [Structural pattern](#structural-pattern)
+      - [Adapter pattern](#adapter-pattern)
+      - [Composite pattern](#composite-pattern)
+      - [Decorator pattern](#decorator-pattern)
+      - [Facade pattern](#facade-pattern)
+      - [Flyweight pattern](#flyweight-pattern)
+      - [Proxy pattern](#proxy-pattern)
+    - [Behavioral pattern](#behavioral-pattern)
+      - [Chain of responsibility pattern](#chain-of-responsibility-pattern)
+      - [Command pattern](#command-pattern)
+      - [Interpreter patter](#interpreter-patter)
+      - [Iterator patter](#iterator-patter)
+      - [Mediator patter](#mediator-patter)
+      - [Momento pattern](#momento-pattern)
+      - [Observer pattern](#observer-pattern)
+      - [State pattern](#state-pattern)
+      - [Strategy patter](#strategy-patter)
+      - [Template method pattern](#template-method-pattern)
+      - [Visitor patter](#visitor-patter)
+
 ## Threads
 
 Note about parallelism and concurrency: The primary difference between using processes versus threads is the way that memory is handled. At a high level, processes copy memory, while threads share memory. This makes process spawning slower than thread spawning, and leads to processes consuming more resources once running. Overall, threads incur less overhead than processes. This Thread API is a Ruby API. I've hinted that the different Ruby implementations have different underlying threading behaviours.
 
-#### Green Thread
+#### Green Threads
 
 Ruby 1.9 replaced green threads with native threads. However, the GIL is still preventing parallelism. That being said, concurrency has been improved through better scheduling. The new scheduler makes context-switch decisions more efficient, by essentially moving them to a separate native thread, known as the timer thread.
 
