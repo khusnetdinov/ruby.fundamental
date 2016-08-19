@@ -5,8 +5,8 @@ This is repo keeps examples with description modern principles, patterns.
 #### Content:
   - [Threads](#threads)
     - [Green threads](#green-threads)
-    - [GIL - Global Interpreter Lock](#gil--global-interpreter-lock)
-    - [Mutex - Mutual Execution](#mutex--mutual-execution)
+    - [GIL - Global Interpreter Lock](#gil---global-interpreter-lock)
+    - [Mutex - Mutual Execution](#mutex---mutual-execution)
     - [Fibers](#fibers)
     - [Rails - Thread-safety in the framework](#rails---thread-safety-in-the-framework)
   - [Solid principles](#solid)
