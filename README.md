@@ -11,7 +11,7 @@ This is repo keeps examples with description modern principles, patterns.
     - [Rails - Thread-safety in the framework](#rails---thread-safety-in-the-framework)
   - [Solid principles](#solid)
     - [SRP - Single responsibility principle](#srp---single-responsibility-principle)
-    - [OCP - Open/closed principle] (#ocp---openclosed-principle)
+    - [OCP - Open/closed principle](#ocp---openclosed-principle)
     - [LSP - Liskov substitution principle](#lsp--liskov-substitution-principle)
     - [ISP - Interface segregation principle](#isp---interface-segregation-principle)
     - [DIP - Dependency inversion principle](#dip---dependency-inversion-principle)
@@ -41,6 +41,7 @@ This is repo keeps examples with description modern principles, patterns.
       - [Strategy pattern](#strategy-pattern)
       - [Template method pattern](#template-method-pattern)
       - [Visitor pattern](#visitor-pattern)
+    - [Basic axioms of data structures](#data)
 
 ## Threads
 
@@ -110,18 +111,18 @@ In computer programming, SOLID (single responsibility, open-closed, Liskov subst
 
 ####SRP - Single responsibility principle
 A class should have only a single responsibility.
- 
+
 Every class should have a single responsibility, and that responsibility should be entirely encapsulated.
 All its services should be narrowly aligned with that responsibility, this embrace the high cohesion.
 
 [See example] (https://github.com/khusnetdinov/ruby.fundamental/blob/master/solid/single_responsibility.rb)
-     
+
 ####OCP - Open/closed principle
 Software entities should be open for extension, but closed for modification.
 That is, such an entity can allow its behaviour to be extended without modifying its source code.
 
 [See example] (https://github.com/khusnetdinov/ruby.fundamental/blob/master/solid/open_close.rb)
- 
+
 ####LSP - Liskov substitution principle
 Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
 
@@ -295,7 +296,7 @@ The iterator design pattern provides sequential access to elements within a cont
 #### Mediator pattern
 
 Usually a program is made up of a large number of classes. So the logic and computation is distributed among these classes. However, as more classes are developed in a program, especially during maintenance and/or refactoring, the problem of communication between these classes may become more complex. This makes the program harder to read and maintain. Furthermore, it can become difficult to change the program, since any change may affect code in several other classes. With the mediator pattern, communication between objects is encapsulated with a mediator object. Objects no longer communicate directly with each other, but instead communicate through the mediator. This reduces the dependencies between communicating objects, thereby lowering the coupling.
- 
+
 [See example] (https://github.com/khusnetdinov/ruby.fundamental/blob/master/patterns/behavioral/mediator.rb) | [Read wiki] (https://en.wikipedia.org/wiki/Mediator_pattern)
 
 #### Momento pattern
@@ -362,4 +363,8 @@ In essence, the visitor allows one to add new virtual functions to a family of c
 
 * [https://gist.github.com/martindemello/7231bf0f407ca428b509] (https://gist.github.com/martindemello/7231bf0f407ca428b509)
 
+## Basic axioms of data structures
 
+The running time performance of the common language runtime is given by a set of axioms which we shall now postulate.
+
+[See description with examples](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/axioms.rb)
