@@ -409,12 +409,11 @@ The running time performance of the common language runtime is given by a set of
 
 Singly linked lists contain nodes which have a data field as well as a 'next' field, which points to the next node in line of nodes. Operations that can be performed on singly linked lists include insertion, deletion and traversal.
 
+| Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
+|-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
+[Singly-Linked List](http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
+
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000) | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) 
-
-| Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion | Space Complexity | 
-|-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|-----------------:|
-[Singly-Linked List](http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` | `O(n)` |
-
 
 #### Other structures implementation
 
