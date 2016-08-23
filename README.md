@@ -41,7 +41,9 @@ This is repo keeps examples with description modern principles, patterns.
       - [Strategy pattern](#strategy-pattern)
       - [Template method pattern](#template-method-pattern)
       - [Visitor pattern](#visitor-pattern)
-  - [Basic axioms of data structures](#basic-axioms-of-data-structures)
+  - [Data Structures](#data-structures)
+    - [Basic axioms of data structures](#basic-axioms-of-data-structures)
+    - [Big O notation](#big-o-notation)
 
 ## Threads
 
@@ -367,9 +369,31 @@ In essence, the visitor allows one to add new virtual functions to a family of c
 
 * [https://gist.github.com/martindemello/7231bf0f407ca428b509](https://gist.github.com/martindemello/7231bf0f407ca428b509)
 
+## Data structures
 
-### Basic axioms of data structures
+In computer science, big O notation is used to classify algorithms by how they respond to changes in input size, such as how the processing time of an algorithm changes as the problem size becomes extremely large. In analytic number theory it is used to estimate the "error committed" while replacing the asymptotic size of an arithmetical function by the value it takes at a large finite argument. A famous example is the problem of estimating the remainder term in the prime number theorem.
+
+#### Basic axioms of data structures
 
 The running time performance of the common language runtime is given by a set of axioms which we shall now postulate.
 
 [See description with examples](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/axioms.rb)
+
+#### Code and articles were taken from resources:
+
+* [Axioms](http://www.brpreiss.com/books/opus8/html/page37.html)
+
+#### Big O notation 
+
+* [Conventions for Writing Big Oh Expressions](http://www.brpreiss.com/books/opus8/html/page66.html)
+
+* [Rules For Big Oh Analysis of Running Time](http://www.brpreiss.com/books/opus8/html/page72.html)
+
+* [Reality Check](http://www.brpreiss.com/books/opus8/html/page76.html)
+
+* [Example: Ruby method with Big O explanation](http://www.brpreiss.com/books/opus8/html/page71.html)
+
+* [Example: Example-Prefix Sums](http://www.brpreiss.com/books/opus8/html/page73.html)
+
+* [Example: Bucket Sort](http://www.brpreiss.com/books/opus8/html/page75.html)
+
