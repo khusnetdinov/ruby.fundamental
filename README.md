@@ -41,7 +41,7 @@ This is repo keeps examples with description modern principles, patterns.
       - [Strategy pattern](#strategy-pattern)
       - [Template method pattern](#template-method-pattern)
       - [Visitor pattern](#visitor-pattern)
-  - [Basic axioms of data structures](#data)
+  - [Basic axioms of data structures](#basic-axioms-of-data-structures)
 
 ## Threads
 
