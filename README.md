@@ -43,7 +43,11 @@ This is repo keeps examples with description modern principles, patterns.
       - [Visitor pattern](#visitor-pattern)
   - [Data Structures](#data-structures)
     - [Basic axioms of data structures](#basic-axioms-of-data-structures)
-    - [Big O notation](#big-o-notation)
+      - [Axioms](#axioms)
+    - [Big O notation](#big-o-notation)  
+    - [Implementation](#implementation)
+      - [Singly Linked List](#singly-linked-list)
+      - [Other structures implementation](#other-structures-implementation)
 
 ## Threads
 
@@ -373,7 +377,9 @@ In essence, the visitor allows one to add new virtual functions to a family of c
 
 In computer science, big O notation is used to classify algorithms by how they respond to changes in input size, such as how the processing time of an algorithm changes as the problem size becomes extremely large. In analytic number theory it is used to estimate the "error committed" while replacing the asymptotic size of an arithmetical function by the value it takes at a large finite argument. A famous example is the problem of estimating the remainder term in the prime number theorem.
 
-#### Basic axioms of data structures
+### Basic axioms of data structures
+
+#### Axioms
 
 The running time performance of the common language runtime is given by a set of axioms which we shall now postulate.
 
@@ -383,7 +389,7 @@ The running time performance of the common language runtime is given by a set of
 
 * [Axioms](http://www.brpreiss.com/books/opus8/html/page37.html)
 
-#### Big O notation 
+### Big O notation 
 
 * [Conventions for Writing Big Oh Expressions](http://www.brpreiss.com/books/opus8/html/page66.html)
 
@@ -397,3 +403,20 @@ The running time performance of the common language runtime is given by a set of
 
 * [Example: Bucket Sort](http://www.brpreiss.com/books/opus8/html/page75.html)
 
+### Implementation
+
+#### Singly Linked List
+
+Singly linked lists contain nodes which have a data field as well as a 'next' field, which points to the next node in line of nodes. Operations that can be performed on singly linked lists include insertion, deletion and traversal.
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000) | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) 
+
+#### Other structures implementation
+
+* [Array](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/array.rb)
+
+* [Multi Dimensional Array](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/array.rb)
+
+* [Matrix](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/matrix.rb)
+
+* [Dense Matrix](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/dense_matrix.rb)
