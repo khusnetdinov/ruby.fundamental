@@ -405,6 +405,8 @@ The running time performance of the common language runtime is given by a set of
 
 ### Implementation
 
+> NOTE: All data structures are given as example for learning purpose. For using in project please refer to other resources. Most examples were taken from [Here](http://www.brpreiss.com/) witch is proper Bruno R. Preiss.
+
 #### Singly Linked List
 
 Singly linked lists contain nodes which have a data field as well as a 'next' field, which points to the next node in line of nodes. Operations that can be performed on singly linked lists include insertion, deletion and traversal.
@@ -415,12 +417,26 @@ Singly linked lists contain nodes which have a data field as well as a 'next' fi
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000) | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) 
 
+#### Stack as Array
+
+Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a stack gives rise to its alternative name, LIFO (for last in, first out).
+
+| Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
+|-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
+[Stack](http://en.wikipedia.org/wiki/Stack_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page130.html) | [Read wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+
 #### Other structures implementation
 
-* [Array](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/array.rb)
+* []()
 
-* [Multi Dimensional Array](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/array.rb)
+* []()
 
-* [Matrix](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/matrix.rb)
+* []()
 
-* [Dense Matrix](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/dense_matrix.rb)
+* []()
+
+* []()
+
+* []()
