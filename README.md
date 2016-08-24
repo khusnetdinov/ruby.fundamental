@@ -469,11 +469,9 @@ An ordered list is a list in which the order of the items is significant. Howeve
 OrderedListAsArray      |`Θ(1)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(1)` | `O(n)` | `O(1)` | `O(1)` |
 OrderedListAsLinkedList |`Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[Read wiki](https://en.wikipedia.org/wiki/Double-ended_queue)
+[See ordered list as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page169.html)
 
-[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page169.html)
-
-[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page178.html)
+[See ordered list as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page178.html)
 
 #### Other structures implementation
 * []()
