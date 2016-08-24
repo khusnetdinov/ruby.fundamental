@@ -417,15 +417,17 @@ Singly linked lists contain nodes which have a data field as well as a 'next' fi
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000) | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) 
 
-#### Stack as Array
+#### Stack
 
-Stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a stack gives rise to its alternative name, LIFO (for last in, first out).
+The stack is the sibling of the queue. It mimicks a real-life stack (e.g. of paper). It is FILO (first-in-last-out), so that when items are retrieved from the stack, they are returned in the reverse of the order in which they were added. Again, Ruby Arrays provide a perfect container. As with the Queue, it could also be implemented using a linked list.
 
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Stack](http://en.wikipedia.org/wiki/Stack_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page130.html) | [Read wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+[Read wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+[See stack as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page131.html)
+[See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page131.html)
 
 #### Other structures implementation
 

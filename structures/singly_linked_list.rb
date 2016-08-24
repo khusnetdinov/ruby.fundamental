@@ -120,4 +120,12 @@ class SinglyLinkedList
       @tail = prevElem
     end
   end
+
+  def each
+    elem = @head
+    while not elem.nil?
+      yield ptr.data
+      elem = elem.succ
+    end
+  end
 end
