@@ -426,8 +426,10 @@ The stack is the sibling of the queue. It mimicks a real-life stack (e.g. of pap
 [Stack](http://en.wikipedia.org/wiki/Stack_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
 [Read wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+
 [See stack as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page131.html)
-[See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page131.html)
+
+[See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page137.html)
 
 #### Other structures implementation
 
