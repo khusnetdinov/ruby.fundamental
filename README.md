@@ -459,8 +459,23 @@ A Deque is a queue which allows adding and removing items at both ends.
 
 [See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page161.html)
 
-#### Other structures implementation
+#### Ordered list
+ 
+An ordered list is a list in which the order of the items is significant. However, the items in an ordered lists are not necessarily sorted. Consequently, it is possible to change the order of items and still have a valid ordered list.
 
+
+| Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
+|-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
+OrderedListAsArray      |`Θ(1)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(1)` | `O(n)` | `O(1)` | `O(1)` |
+OrderedListAsLinkedList |`Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
+
+[Read wiki](https://en.wikipedia.org/wiki/Double-ended_queue)
+
+[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page169.html)
+
+[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page178.html)
+
+#### Other structures implementation
 * []()
 
 * []()
@@ -471,4 +486,6 @@ A Deque is a queue which allows adding and removing items at both ends.
 * [https://github.com/blahah/datastructures](https://github.com/blahah/datastructures)
 
 * [http://www.brpreiss.com](http://www.brpreiss.com)
+
+* [https://en.wikipedia.org/wiki/List_of_data_structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 
