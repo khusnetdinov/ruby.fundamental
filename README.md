@@ -431,16 +431,30 @@ The stack is the sibling of the queue. It mimicks a real-life stack (e.g. of pap
 
 [See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page137.html)
 
+#### Queue
+
+A queue is a simple container-based structure that mimics a real-life queue (e.g. waiting in line at the bank). It is FIFO (first-in-first-out), meaning that when you retrieve items from the queue, they are returned in the order in which they entered. Ruby Arrays provide methods that make Queue implementation trivially easy, but having them named appropriately and contained in a convenience class is worth it to see how they are implemented, and because other structures will inherit from this one. An alternate implementation could be done using a linked list.
+
+| Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
+|-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
+[Queue](http://en.wikipedia.org/wiki/Queue_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
+
+[Read wiki](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+
+[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page147.html)
+
+[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page151.html)
+
 #### Other structures implementation
 
 * []()
 
 * []()
 
-* []()
 
-* []()
+#### Code and articles were taken from resources:
 
-* []()
+* [https://github.com/blahah/datastructures](https://github.com/blahah/datastructures)
 
-* []()
+* [http://www.brpreiss.com](http://www.brpreiss.com)
+
