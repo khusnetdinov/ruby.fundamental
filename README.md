@@ -56,7 +56,6 @@ This is repo keeps examples with description modern principles, patterns.
       - [Binary Search Tree](#binary-search-tree)
       - [B Tree](#b-tree)
       - [Binary Heap](#binary-heap)
-      - [Other structures implementation](#other-structures-implementation)
 
 ## Threads
 
