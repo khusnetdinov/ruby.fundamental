@@ -1,4 +1,4 @@
-# This file contains the Ruby code from Program 5.9 of
+# This file contains the Ruby code from book of
 # "Data Structures and Algorithms
 # with Object-Oriented Design Patterns in Ruby"
 # by Bruno R. Preiss.
@@ -24,5 +24,24 @@ class SearchableContainer < Container
   def initialize
     super
   end
+
+end
+
+module SearchTreeMethods
+
+  abstractmethod :min
+
+  abstractmethod :max
+
+end
+
+class SearchTree < Tree
+
+  def initialize
+    super
+  end
+
+  include SearchableContainerMethods
+  include SearchTreeMethods
 
 end

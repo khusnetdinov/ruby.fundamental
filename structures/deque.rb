@@ -1,4 +1,4 @@
-# This file contains the Ruby code from Program 6.18 of
+# This file contains the Ruby code from book of
 # "Data Structures and Algorithms
 # with Object-Oriented Design Patterns in Ruby"
 # by Bruno R. Preiss.
