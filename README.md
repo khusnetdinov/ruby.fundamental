@@ -56,6 +56,17 @@ This is repo keeps examples with description modern principles, patterns.
       - [Binary Search Tree](#binary-search-tree)
       - [B Tree](#b-tree)
       - [Binary Heap](#binary-heap)
+  - [Algorithms](#algorithms)
+    - [Sorting](#sorting)
+      - [Bubble sort](#bubble-sort)
+      - [Insertion sort](#insertion-sort)
+      - [Selection sort](#selection-sort)
+      - [Shell sort](#shell-sort)
+      - [Heap sort](#heap-sort)
+      - [Merge sort](#merge-sort)
+      - [Quick sort](#quick-sort)
+    - [Searching](#searching)
+      - []()  
 
 ## Threads
 
@@ -544,4 +555,51 @@ A binary heap is a heap-ordered complete binary tree which is implemented using 
 
 * [http://bigocheatsheet.com/](http://bigocheatsheet.com/)
 
-* **[https://gist.github.com/TSiege/cbb0507082bb18ff7e4b](https://gist.github.com/TSiege/cbb0507082bb18ff7e4b)**
+* [https://gist.github.com/TSiege/cbb0507082bb18ff7e4b](https://gist.github.com/TSiege/cbb0507082bb18ff7e4b)
+
+## Algorithms
+
+### Sorting
+
+A sorting algorithm is an algorithm that puts elements of a list in a certain order. The most-used orders are numerical order and lexicographical order. Efficient sorting is important for optimizing the use of other algorithms (such as search and merge algorithms) which require input data to be in sorted lists; it is also often useful for canonicalizing data and for producing human-readable output.
+
+#### Bubble sort
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/bubble.rb) | [Read wiki](https://en.wikipedia.org/wiki/Bubble_sort)
+
+#### Insertion sort
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/insertion.rb) | [Read wiki](https://en.wikipedia.org/wiki/Insertion_sort)
+
+#### Selection sort
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/selection.rb) | [Read wiki](https://en.wikipedia.org/wiki/Selection_sort)
+
+#### Shell sort
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/shell.rb) | [Read wiki](https://en.wikipedia.org/wiki/Shellsort)
+
+#### Heap sort
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/heap.rb) | [Read wiki](https://en.wikipedia.org/wiki/Heapsort)
+
+#### Merge sort
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/merge.rb) | [Read wiki](https://en.wikipedia.org/wiki/Merge_sort)
+
+#### Quick sort
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/quick.rb) | [Read wiki](https://en.wikipedia.org/wiki/Quicksort)
+
+#### Other sorting algorithms
+
+* [http://rosettacode.org/wiki/Category:Sorting_Algorithms](http://rosettacode.org/wiki/Category:Sorting_Algorithms)
+
+* [https://www.toptal.com/developers/sorting-algorithms](https://www.toptal.com/developers/sorting-algorithms)
+
+### Searching
+
+#### Other search algorithms
+
+* []()
+
