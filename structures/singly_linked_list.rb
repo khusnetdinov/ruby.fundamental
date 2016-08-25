@@ -13,7 +13,7 @@ class SinglyLinkedList
       @list, @data, @succ = list, data, succ
     end
 
-    def insertAfter(item)
+    def insert_after(item)
       @succ = Element.new(@list, item, @succ)
 
       if @list.tail.equal?(self)
@@ -21,7 +21,7 @@ class SinglyLinkedList
       end
     end
 
-    def insertBefore(item)
+    def insert_before(item)
       tmp = Element.new(@list, item, self)
 
       if @list.head.equal?(self)

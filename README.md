@@ -47,6 +47,8 @@ This is repo keeps examples with description modern principles, patterns.
     - [Big O notation](#big-o-notation)  
     - [Implementation](#implementation)
       - [Singly Linked List](#singly-linked-list)
+      
+      
       - [Other structures implementation](#other-structures-implementation)
 
 ## Threads
@@ -458,6 +460,19 @@ A Deque is a queue which allows adding and removing items at both ends.
 [See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page158.html)
 
 [See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page161.html)
+
+#### Double linked list
+
+In a doubly-linked list , each list element contains two references--one to its successor and one to its predecessor. 
+
+| Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
+|-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
+[Doubly-Linked List](http://en.wikipedia.org/wiki/Doubly_linked_list) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` | 
+
+[Read wiki](https://en.wikipedia.org/wiki/Doubly_linked_list)
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/double_linked_list.rb)
+
 
 #### Ordered list
  
