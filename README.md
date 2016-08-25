@@ -43,12 +43,19 @@ This is repo keeps examples with description modern principles, patterns.
       - [Visitor pattern](#visitor-pattern)
   - [Data Structures](#data-structures)
     - [Basic axioms of data structures](#basic-axioms-of-data-structures)
-      - [Axioms](#axioms)
     - [Big O notation](#big-o-notation)  
     - [Implementation](#implementation)
+      - [Stack](#stack)
+      - [Queue](#queue)
+      - [Deque](#deque)
       - [Singly Linked List](#singly-linked-list)
-      
-      
+      - [Double Linked List](#double-linked-list)
+      - [Ordered List](#ordered-list)
+      - [Hash Table](#hash-table)
+      - [Binary Tree](#binary-tree)
+      - [Binary Search Tree](#binary-search-tree)
+      - [B Tree](#b-tree)
+      - [Binary Heap](#binary-heap)
       - [Other structures implementation](#other-structures-implementation)
 
 ## Threads
@@ -381,8 +388,6 @@ In computer science, big O notation is used to classify algorithms by how they r
 
 ### Basic axioms of data structures
 
-#### Axioms
-
 The running time performance of the common language runtime is given by a set of axioms which we shall now postulate.
 
 [See description with examples](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/axioms.rb)
@@ -417,8 +422,6 @@ The stack is the sibling of the queue. It mimicks a real-life stack (e.g. of pap
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Stack](http://en.wikipedia.org/wiki/Stack_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[Read wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
-
 [See stack as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page131.html)
 
 [See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page137.html)
@@ -431,8 +434,6 @@ A queue is a simple container-based structure that mimics a real-life queue (e.g
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Queue](http://en.wikipedia.org/wiki/Queue_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[Read wiki](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
-
 [See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page147.html)
 
 [See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page151.html)
@@ -444,8 +445,6 @@ A Deque is a queue which allows adding and removing items at both ends.
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Deque](https://en.wikipedia.org/wiki/Double-ended_queue) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
-
-[Read wiki](https://en.wikipedia.org/wiki/Double-ended_queue)
 
 [See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page158.html)
 
@@ -468,8 +467,6 @@ In a doubly-linked list , each list element contains two references--one to its 
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Doubly-Linked List](http://en.wikipedia.org/wiki/Doubly_linked_list) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` | 
-
-[Read wiki](https://en.wikipedia.org/wiki/Doubly_linked_list)
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/double_linked_list.rb)
 
@@ -525,6 +522,16 @@ In computer science, a B-tree is a self-balancing tree data structure that keeps
 [B-Tree](http://en.wikipedia.org/wiki/B_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | 
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/b_tree.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page339.html)
+
+#### Binary Heap
+
+A binary heap is a heap-ordered complete binary tree which is implemented using an array. In a heap the smallest key is found at the root and since the root is always found in the first position of the array, finding the smallest key is a trivial operation in a binary heap.
+
+| Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
+|-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
+[B-Tree](https://en.wikipedia.org/wiki/Binary_heap) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `O(log(n))` | `O(n)` | `O(n))` | `O(log(n))` | `O(log(n))` | 
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_heap.rb) | [Read implementation steps] (http://www.brpreiss.com/books/opus8/html/page355.html)
 
 #### Code and articles were taken from resources:
 
