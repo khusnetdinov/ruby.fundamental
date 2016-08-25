@@ -544,4 +544,4 @@ A binary heap is a heap-ordered complete binary tree which is implemented using 
 
 * [http://bigocheatsheet.com/](http://bigocheatsheet.com/)
 
-* [https://gist.github.com/TSiege/cbb0507082bb18ff7e4b](https://gist.github.com/TSiege/cbb0507082bb18ff7e4b)
+* **[https://gist.github.com/TSiege/cbb0507082bb18ff7e4b](https://gist.github.com/TSiege/cbb0507082bb18ff7e4b)**
