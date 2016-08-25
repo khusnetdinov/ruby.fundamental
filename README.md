@@ -565,31 +565,31 @@ A sorting algorithm is an algorithm that puts elements of a list in a certain or
 
 #### Bubble sort
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/bubble.rb) | [Read wiki](https://en.wikipedia.org/wiki/Bubble_sort)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/bubble.rb) | [Read wiki](https://en.wikipedia.org/wiki/Bubble_sort)
 
 #### Insertion sort
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/insertion.rb) | [Read wiki](https://en.wikipedia.org/wiki/Insertion_sort)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/insertion.rb) | [Read wiki](https://en.wikipedia.org/wiki/Insertion_sort)
 
 #### Selection sort
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/selection.rb) | [Read wiki](https://en.wikipedia.org/wiki/Selection_sort)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/selection.rb) | [Read wiki](https://en.wikipedia.org/wiki/Selection_sort)
 
 #### Shell sort
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/shell.rb) | [Read wiki](https://en.wikipedia.org/wiki/Shellsort)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/shell.rb) | [Read wiki](https://en.wikipedia.org/wiki/Shellsort)
 
 #### Heap sort
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/heap.rb) | [Read wiki](https://en.wikipedia.org/wiki/Heapsort)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/heap.rb) | [Read wiki](https://en.wikipedia.org/wiki/Heapsort)
 
 #### Merge sort
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/merge.rb) | [Read wiki](https://en.wikipedia.org/wiki/Merge_sort)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/merge.rb) | [Read wiki](https://en.wikipedia.org/wiki/Merge_sort)
 
 #### Quick sort
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/quick.rb) | [Read wiki](https://en.wikipedia.org/wiki/Quicksort)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/quick.rb) | [Read wiki](https://en.wikipedia.org/wiki/Quicksort)
 
 #### Other sorting algorithms
 
