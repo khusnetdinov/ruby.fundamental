@@ -565,29 +565,54 @@ A sorting algorithm is an algorithm that puts elements of a list in a certain or
 
 #### Bubble sort
 
+Bubble sort has many of the same properties as insertion sort, but has slightly higher overhead. In the case of nearly sorted data, bubble sort takes O(n) time, but requires at least 2 passes through the data (whereas insertion sort requires something more like 1 pass).
+
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/bubble.rb) | [Read wiki](https://en.wikipedia.org/wiki/Bubble_sort)
 
 #### Insertion sort
+
+Although it is one of the elementary sorting algorithms with O(n2) worst-case time, insertion sort is the algorithm of choice either when the data is nearly sorted (because it is adaptive) or when the problem size is small (because it has low overhead).
+For these reasons, and because it is also stable, insertion sort is often used as the recursive base case (when the problem size is small) for higher overhead divide-and-conquer sorting algorithms, such as merge sort or quick sort
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/insertion.rb) | [Read wiki](https://en.wikipedia.org/wiki/Insertion_sort)
 
 #### Selection sort
 
+From the comparions presented here, one might conclude that selection sort should never be used. It does not adapt to the data in any way (notice that the four animations above run in lock step), so its runtime is always quadratic.
+However, selection sort has the property of minimizing the number of swaps. In applications where the cost of swapping items is high, selection sort very well may be the algorithm of choice.
+
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/selection.rb) | [Read wiki](https://en.wikipedia.org/wiki/Selection_sort)
 
 #### Shell sort
+
+The worse-case time complexity of shell sort depends on the increment sequence. For the increments 1 4 13 40 121…, which is what is used here, the time complexity is O(n3/2). For other increments, time complexity is known to be O(n4/3) and even O(n·lg2(n)). Neither tight upper bounds on time complexity nor the best increment sequence are known.
+Because shell sort is based on insertion sort, shell sort inherits insertion sort’s adaptive properties. The adapation is not as dramatic because shell sort requires one pass through the data for each increment, but it is significant. For the increment sequence shown above, there are log3(n) increments, so the time complexity for nearly sorted data is O(n·log3(n)).
+Because of its low overhead, relatively simple implementation, adaptive properties, and sub-quadratic time complexity, shell sort may be a viable alternative to the O(n·lg(n)) sorting algorithms for some applications when the data to be sorted is not very large.
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/shell.rb) | [Read wiki](https://en.wikipedia.org/wiki/Shellsort)
 
 #### Heap sort
 
+Heap sort is simple to implement, performs an O(n·lg(n)) in-place sort, but is not stable.
+The first loop, the Θ(n) “heapify” phase, puts the array into heap order. The second loop, the O(n·lg(n)) “sortdown” phase, repeatedly extracts the maximum and restores heap order.
+The sink function is written recursively for clarity. Thus, as shown, the code requires Θ(lg(n)) space for the recursive call stack. However, the tail recursion in sink() is easily converted to iteration, which yields the O(1) space bound.
+Both phases are slightly adaptive, though not in any particularly useful manner. In the nearly sorted case, the heapify phase destroys the original order. In the reversed case, the heapify phase is as fast as possible since the array starts in heap order, but then the sortdown phase is typical. In the few unique keys case, there is some speedup but not as much as in shell sort or 3-way quicksort.
+
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/heap.rb) | [Read wiki](https://en.wikipedia.org/wiki/Heapsort)
 
 #### Merge sort
 
+Merge sort is very predictable. It makes between 0.5lg(n) and lg(n) comparisons per element, and between lg(n) and 1.5lg(n) swaps per element. The minima are achieved for already sorted data; the maxima are achieved, on average, for random data. If using Θ(n) extra space is of no concern, then merge sort is an excellent choice: It is simple to implement, and it is the only stable O(n·lg(n)) sorting algorithm. Note that when sorting linked lists, merge sort requires only Θ(lg(n)) extra space (for recursion).
+Merge sort is the algorithm of choice for a variety of situations: when stability is required, when sorting linked lists, and when random access is much more expensive than sequential access (for example, external sorting on tape).
+There do exist linear time in-place merge algorithms for the last step of the algorithm, but they are both expensive and complex. The complexity is justified for applications such as external sorting when Θ(n) extra space is not available.
+
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/merge.rb) | [Read wiki](https://en.wikipedia.org/wiki/Merge_sort)
 
 #### Quick sort
+
+When carefully implemented, quick sort is robust and has low overhead. When a stable sort is not needed, quick sort is an excellent general-purpose sort – although the 3-way partitioning version should always be used instead.
+The 2-way partitioning code shown above is written for clarity rather than optimal performance; it exhibits poor locality, and, critically, exhibits O(n2) time when there are few unique keys. A more efficient and robust 2-way partitioning method is given in Quicksort is Optimal by Robert Sedgewick and Jon Bentley. The robust partitioning produces balanced recursion when there are many values equal to the pivot, yielding probabilistic guarantees of O(n·lg(n)) time and O(lg(n)) space for all inputs.
+With both sub-sorts performed recursively, quick sort requires O(n) extra space for the recursion stack in the worst case when recursion is not balanced. This is exceedingly unlikely to occur, but it can be avoided by sorting the smaller sub-array recursively first; the second sub-array sort is a tail recursive call, which may be done with iteration instead. With this optimization, the algorithm uses O(lg(n)) extra space in the worst case.
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/quick.rb) | [Read wiki](https://en.wikipedia.org/wiki/Quicksort)
 
