@@ -66,7 +66,8 @@ This is repo keeps examples with description modern principles, patterns.
       - [Merge sort](#merge-sort)
       - [Quick sort](#quick-sort)
     - [Searching](#searching)
-      - []()  
+      - [Binary search](#binary-search)
+      - [Khuth-Morris-Pratt search](#knuth-morris-pratt-search)
 
 ## Threads
 
