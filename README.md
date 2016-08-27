@@ -567,9 +567,9 @@ A sorting algorithm is an algorithm that puts elements of a list in a certain or
 
 Bubble sort has many of the same properties as insertion sort, but has slightly higher overhead. In the case of nearly sorted data, bubble sort takes O(n) time, but requires at least 2 passes through the data (whereas insertion sort requires something more like 1 pass).
 
-| Algorithm | Best | Average | Worst |
-|----------:|-----:|--------:|------:|
-[Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) | `Ω(n)` | `Θ(n^2)` | `O(n^2)` |
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Ω(n)` | `Θ(n^2)` | `O(n^2)` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/bubble.rb) | [Read wiki](https://en.wikipedia.org/wiki/Bubble_sort)
 
@@ -578,9 +578,9 @@ Bubble sort has many of the same properties as insertion sort, but has slightly 
 Although it is one of the elementary sorting algorithms with O(n2) worst-case time, insertion sort is the algorithm of choice either when the data is nearly sorted (because it is adaptive) or when the problem size is small (because it has low overhead).
 For these reasons, and because it is also stable, insertion sort is often used as the recursive base case (when the problem size is small) for higher overhead divide-and-conquer sorting algorithms, such as merge sort or quick sort
 
-| Algorithm | Best | Average | Worst |
-|----------:|-----:|--------:|------:|
-[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort) | `Ω(n)` | `Θ(n^2)` | `O(n^2)` |
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Ω(n)` | `Θ(n^2)` | `O(n^2)` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/insertion.rb) | [Read wiki](https://en.wikipedia.org/wiki/Insertion_sort)
 
@@ -589,9 +589,9 @@ For these reasons, and because it is also stable, insertion sort is often used a
 From the comparions presented here, one might conclude that selection sort should never be used. It does not adapt to the data in any way (notice that the four animations above run in lock step), so its runtime is always quadratic.
 However, selection sort has the property of minimizing the number of swaps. In applications where the cost of swapping items is high, selection sort very well may be the algorithm of choice.
 
-| Algorithm | Best | Average | Worst |
-|----------:|-----:|--------:|------:|
-[Selection Sort](http://en.wikipedia.org/wiki/Selection_sort) | `Ω(n^2)` | `Θ(n^2)` | `O(n^2)` |
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Ω(n^2)` | `Θ(n^2)` | `O(n^2)` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/selection.rb) | [Read wiki](https://en.wikipedia.org/wiki/Selection_sort)
 
@@ -601,9 +601,9 @@ The worse-case time complexity of shell sort depends on the increment sequence. 
 Because shell sort is based on insertion sort, shell sort inherits insertion sort’s adaptive properties. The adapation is not as dramatic because shell sort requires one pass through the data for each increment, but it is significant. For the increment sequence shown above, there are log3(n) increments, so the time complexity for nearly sorted data is O(n·log3(n)).
 Because of its low overhead, relatively simple implementation, adaptive properties, and sub-quadratic time complexity, shell sort may be a viable alternative to the O(n·lg(n)) sorting algorithms for some applications when the data to be sorted is not very large.
 
-| Algorithm | Best | Average | Worst |
-|----------:|-----:|--------:|------:|
-[Shell Sort](http://en.wikipedia.org/wiki/Shellsort) | `Ω(n log(n))` | `Θ(n(log(n))^2)` | `O(n(log(n))^2)` |
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Ω(n log(n))` | `Θ(n(log(n))^2)` | `O(n(log(n))^2)` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/shell.rb) | [Read wiki](https://en.wikipedia.org/wiki/Shellsort)
 
@@ -614,9 +614,9 @@ The first loop, the Θ(n) “heapify” phase, puts the array into heap order. T
 The sink function is written recursively for clarity. Thus, as shown, the code requires Θ(lg(n)) space for the recursive call stack. However, the tail recursion in sink() is easily converted to iteration, which yields the O(1) space bound.
 Both phases are slightly adaptive, though not in any particularly useful manner. In the nearly sorted case, the heapify phase destroys the original order. In the reversed case, the heapify phase is as fast as possible since the array starts in heap order, but then the sortdown phase is typical. In the few unique keys case, there is some speedup but not as much as in shell sort or 3-way quicksort.
 
-| Algorithm | Best | Average | Worst |
-|----------:|-----:|--------:|------:|
-[Heapsort](http://en.wikipedia.org/wiki/Heapsort) | `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` |
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/heap.rb) | [Read wiki](https://en.wikipedia.org/wiki/Heapsort)
 
@@ -626,9 +626,9 @@ Merge sort is very predictable. It makes between 0.5lg(n) and lg(n) comparisons 
 Merge sort is the algorithm of choice for a variety of situations: when stability is required, when sorting linked lists, and when random access is much more expensive than sequential access (for example, external sorting on tape).
 There do exist linear time in-place merge algorithms for the last step of the algorithm, but they are both expensive and complex. The complexity is justified for applications such as external sorting when Θ(n) extra space is not available.
 
-| Algorithm | Best | Average | Worst |
-|----------:|-----:|--------:|------:|
-[Mergesort](http://en.wikipedia.org/wiki/Merge_sort) | `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` | 
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` | 
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/merge.rb) | [Read wiki](https://en.wikipedia.org/wiki/Merge_sort)
 
@@ -638,9 +638,9 @@ When carefully implemented, quick sort is robust and has low overhead. When a st
 The 2-way partitioning code shown above is written for clarity rather than optimal performance; it exhibits poor locality, and, critically, exhibits O(n2) time when there are few unique keys. A more efficient and robust 2-way partitioning method is given in Quicksort is Optimal by Robert Sedgewick and Jon Bentley. The robust partitioning produces balanced recursion when there are many values equal to the pivot, yielding probabilistic guarantees of O(n·lg(n)) time and O(lg(n)) space for all inputs.
 With both sub-sorts performed recursively, quick sort requires O(n) extra space for the recursion stack in the worst case when recursion is not balanced. This is exceedingly unlikely to occur, but it can be avoided by sorting the smaller sub-array recursively first; the second sub-array sort is a tail recursive call, which may be done with iteration instead. With this optimization, the algorithm uses O(lg(n)) extra space in the worst case.
 
-| Algorithm | Best | Average | Worst |
-|----------:|-----:|--------:|------:|
-[Quicksort](http://en.wikipedia.org/wiki/Quicksort) | `Ω(n log(n))` | `Θ(n log(n))` | `O(n^2)` |
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Ω(n log(n))` | `Θ(n log(n))` | `O(n^2)` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/quick.rb) | [Read wiki](https://en.wikipedia.org/wiki/Quicksort)
 
@@ -652,7 +652,39 @@ With both sub-sorts performed recursively, quick sort requires O(n) extra space 
 
 ### Searching
 
+#### Binary search
+
+In computer science, binary search, also known as half-interval search or logarithmic search, is a search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
+
+| Best | Average | Worst |
+|-----:|--------:|------:|
+| `Θ(1)` | `Θ(n log(n))` | `O(log(n))` |
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/search/binary.rb) | [Read wiki](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+
+#### Knuth-Morris-Pratt search
+
+In computer science, the Knuth–Morris–Pratt string searching algorithm (or KMP algorithm) searches for occurrences of a "word" W within a main "text string" S by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin, thus bypassing re-examination of previously matched characters.
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/knuth-morris-pratt.rb) | [Read wiki](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+
 #### Other search algorithms
 
-* []()
+* [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+
+* [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
+
+* [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
+
+* [Longest increasing subsequence](https://en.wikipedia.org/wiki/Longest_increasing_subsequence)
+
+* [Telephone number to words](http://www.mobilefish.com/services/phonenumber_words/phonenumber_words.php)
+
+#### Code and articles were taken from resources:
+
+* [https://github.com/sagivo/algorithms](https://github.com/sagivo/algorithms)
+
+* [https://github.com/kanwei/algorithms](https://github.com/kanwei/algorithms)
+
+
 
