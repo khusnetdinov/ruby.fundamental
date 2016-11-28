@@ -651,6 +651,10 @@ With both sub-sorts performed recursively, quick sort requires O(n) extra space 
 
 * [https://www.toptal.com/developers/sorting-algorithms](https://www.toptal.com/developers/sorting-algorithms)
 
+#### Additional reading
+
+* [https://www.igvita.com/2009/03/26/ruby-algorithms-sorting-trie-heaps/](https://www.igvita.com/2009/03/26/ruby-algorithms-sorting-trie-heaps/)
+
 ### Searching
 
 #### Binary search
