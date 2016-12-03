@@ -2,6 +2,9 @@
 
 This is repo keeps examples with description modern principles, patterns.
 
+#### Translations:
+  - [Chinese](https://github.com/fanjieqi/ruby.fundamental)
+
 #### Content:
   - [Threads](#threads)
     - [Green threads](#green-threads)
