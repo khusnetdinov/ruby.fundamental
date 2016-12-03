@@ -68,6 +68,7 @@ This is repo keeps examples with description modern principles, patterns.
     - [Searching](#searching)
       - [Binary search](#binary-search)
       - [Khuth-Morris-Pratt search](#knuth-morris-pratt-search)
+  - [Interview questions](#interview)
 
 ## Threads
 
@@ -692,4 +693,6 @@ In computer science, the Knuth–Morris–Pratt string searching algorithm (or K
 * [https://github.com/kanwei/algorithms](https://github.com/kanwei/algorithms)
 
 
-
+### Interview
+* https://www.toptal.com/ruby/interview-questions
+* https://gist.github.com/ryansobol/5252653
