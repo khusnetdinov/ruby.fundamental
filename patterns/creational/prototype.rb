@@ -10,6 +10,10 @@ class Note
   def initialize(duration)
     @duration = duration
   end
+
+  def deep_copy
+    Marshal::load(Marshal.dump(self))
+  end
 end
 
 class Clef
@@ -19,7 +23,7 @@ end
 
 class PrototypeManager
   def initialize
-    @prototypes = []
+    @prototypes = {}
   end
 
   def set(key, prototype)
@@ -51,4 +55,4 @@ prototype.set :half_note, Note.new(0.5)
 prototype.set :full_note, Note.new(1)
 
 note = prototype.get(:full_note)
-
+note.duration
