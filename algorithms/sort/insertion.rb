@@ -5,7 +5,7 @@
 # Space Complexity: О(n) total, O(1) auxiliary
 # Stable: Yes
 #
-# Algorithms::Sort.insertion_sort [5, 4, 3, 1, 2] => [1, 2, 3, 4, 5]
+# [5, 4, 3, 1, 2].insertion_sort! => [1, 2, 3, 4, 5]
 
 class Array
   def insertion_sort!
