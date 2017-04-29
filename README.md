@@ -1,4 +1,4 @@
-# Fundamental programming with ruby examples
+# Fundamental programming with ruby examples [![Build Status](https://travis-ci.org/khusnetdinov/ruby.fundamental.svg?branch=master)](https://travis-ci.org/khusnetdinov/ruby.fundamental)
 
 This is repo keeps examples with description modern principles, patterns.
 

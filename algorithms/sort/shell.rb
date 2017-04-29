@@ -5,7 +5,7 @@
 # Space Complexity: О(n) total, O(1) auxiliary
 # Stable: Yes
 #
-# Algorithms::Sort.shell_sort [5, 4, 3, 1, 2] => [1, 2, 3, 4, 5]
+# [5, 4, 3, 1, 2].shell_sort! => [1, 2, 3, 4, 5]
 
 class Array
   def shell_sort!

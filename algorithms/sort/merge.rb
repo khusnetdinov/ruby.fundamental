@@ -5,7 +5,7 @@
 # Space Complexity: О(n) auxiliary
 # Stable: Yes
 #
-# Algorithms::Sort.mergesort [5, 4, 3, 1, 2] => [1, 2, 3, 4, 5]
+# [5, 4, 3, 1, 2].merge_sort! => [1, 2, 3, 4, 5]
 
 class Array
   def merge_sort!
