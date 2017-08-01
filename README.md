@@ -6,6 +6,22 @@ This is repo keeps examples with description modern principles, patterns.
   - [Chinese](https://github.com/fanjieqi/ruby.fundamental)
 
 #### Content:
+  - [Meta Programming](#meta-programming)
+    - [Dynamic dispatch](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/dynamic_dispatch.rb)
+    - [Dynamic method](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/dynamic_method.rb)
+    - [Ghost methods](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/ghost_methods.rb)
+    - [Dynamic proxies](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/dynamic_proxies.rb)
+    - [Blank slate](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/blank_slate.rb)
+    - [Kernel method](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/kernel_method.rb)
+    - [Flattening the scope](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/flattening_the_scope.rb)
+    - [Context probe](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/context_probe.rb)
+    - [Class eval](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/class_eval.rb)
+    - [Class macros](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/class_macros.rb)
+    - [Around alias](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/around_alias.rb)
+    - [Hook methods](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/hook_methods.rb)
+    - [Class extension mixin](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/class_extension_mixin.rb)
+    - [Module mamespace interpolation](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/module_mamespace_interpolation.rb)
+    
   - [Threads](#threads)
     - [Green threads](#green-threads)
     - [GIL - Global Interpreter Lock](#gil---global-interpreter-lock)
@@ -72,6 +88,12 @@ This is repo keeps examples with description modern principles, patterns.
       - [Binary search](#binary-search)
       - [Khuth-Morris-Pratt search](#knuth-morris-pratt-search)
   - [Interview questions](#interview)
+
+## Meta Programming
+
+Metaprogramming is the writing of computer programs that write or manipulate other programs (or themselves) as their data, or that do part of the work at compile time that would otherwise be done at runtime. In many cases, this allows programmers to get more done in the same amount of time as they would take to write all the code manually, or it gives programs greater flexibility to efficiently handle new situations without recompilation. Or, more simply put: Metaprogramming is writing code that writes code during runtime to make your life easier.
+
+###
 
 ## Threads
 
