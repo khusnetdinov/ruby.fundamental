@@ -54,7 +54,7 @@ This is repo keeps examples with description modern principles, patterns.
       - [Interpreter pattern](#interpreter-pattern)
       - [Iterator pattern](#iterator-pattern)
       - [Mediator pattern](#mediator-pattern)
-      - [Momento pattern](#momento-pattern)
+      - [Memento pattern](#memento-pattern)
       - [Observer pattern](#observer-pattern)
       - [State pattern](#state-pattern)
       - [Strategy pattern](#strategy-pattern)
@@ -355,11 +355,11 @@ Usually a program is made up of a large number of classes. So the logic and comp
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/patterns/behavioral/mediator.rb) | [Read wiki](https://en.wikipedia.org/wiki/Mediator_pattern)
 
-#### Momento pattern
+#### Memento pattern
 
 The memento pattern is implemented with three objects: the originator, a caretaker and a memento. The originator is some object that has an internal state. The caretaker is going to do something to the originator, but wants to be able to undo the change. The caretaker first asks the originator for a memento object. Then it does whatever operation (or sequence of operations) it was going to do. To roll back to the state before the operations, it returns the memento object to the originator. The memento object itself is an opaque object (one which the caretaker cannot, or should not, change). When using this pattern, care should be taken if the originator may change other objects or resources - the memento pattern operates on a single object.
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/patterns/behavioral/momento.rb) | [Read wiki](https://en.wikipedia.org/wiki/Memento_pattern)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/patterns/behavioral/memento.rb) | [Read wiki](https://en.wikipedia.org/wiki/Memento_pattern)
 
 #### Observer pattern
 
