@@ -155,7 +155,7 @@ The problem with this is that there is no simple way to say with absolute certai
 
 * [https://en.wikipedia.org/wiki/Global_interpreter_lock](https://en.wikipedia.org/wiki/Global_interpreter_lock)
 
-* [http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/](http://www.csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
+* [https://csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/](https://csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
 
 ## Solid
 
