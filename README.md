@@ -31,7 +31,7 @@ This is repo keeps examples with description modern principles, patterns.
   - [Solid principles](#solid)
     - [SRP - Single responsibility principle](#srp---single-responsibility-principle)
     - [OCP - Open/closed principle](#ocp---openclosed-principle)
-    - [LSP - Liskov substitution principle](#lsp--liskov-substitution-principle)
+    - [LSP - Liskov substitution principle](#lsp---liskov-substitution-principle)
     - [ISP - Interface segregation principle](#isp---interface-segregation-principle)
     - [DIP - Dependency inversion principle](#dip---dependency-inversion-principle)
   - [Design patterns](#design-patterns)
@@ -194,13 +194,13 @@ ISP is intended to keep a system decoupled and thus easier to refactor, change, 
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/solid/interface_segregation.rb)
 
-####DIP - Dependency inversion principle
+#### DIP - Dependency inversion principle
 
 One should Depend upon Abstractions, Do not depend upon concretions.
 
 Refers to a specific form of decoupling software modules. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are inverted (i.e. reversed), thus rendering high-level modules independent of the low-level module implementation details. 
 
-####Code and articles were taken from resources:
+#### Code and articles were taken from resources:
 
 * [https://gist.github.com/khusnetdinov/9d8f50fdcaab197871b31578f2e14d5d](https://gist.github.com/khusnetdinov/9d8f50fdcaab197871b31578f2e14d5d) 
 
