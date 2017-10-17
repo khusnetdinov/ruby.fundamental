@@ -20,73 +20,100 @@
 # email summary of a specific person’s commissions after marking a deal
 # processed. The fact that we can identify multiple reasons to change signals a
 # violation of the Single Responsibility Principle.
+module Shared
+  class Deal
+    attr_accessor :amount, :processed
 
-class DealProcessor
-  attr_reader :deals
+    def initialize(amount)
+      @amount = amount
+      @processed = false
+    end
 
-  def initialize(deals)
-    @deals = deals
-  end
-
-  def process
-    deals.each do |deal|
-      # Here we calculate commission and create instance of Commission
-      Commission.create(deal: deal, amount: calculate_commission(deal))
-      mark_deal_processed
+    def mark_as_processed
+      self.processed = true
     end
   end
 
-  private
+  class Commission
+    attr_reader :deal, :amount
 
-  def mark_deal_processed
-    # Implementation
-  end
+    def initialize(deal:, amount:)
+      @deal = deal
+      @amount = amount
+    end
 
-  def calculate_commission(deal)
-    deal.amount * 0.05
+    def log
+      puts self
+    end
+
+    def to_s
+      "Deal id #{deal.object_id} amount #{amount}\n"
+    end
   end
 end
 
-class Commission
-  # Implementation
+module BreakSingleResponsibility
+  class DealsProcessor
+    attr_reader :deals
+
+    def initialize(deals)
+      @deals = deals
+    end
+
+    def process
+      deals.each do |deal|
+        # Here we calculate commission and create instance of Commission
+        Shared::Commission.new(deal: deal, 
+                               amount: calculate_commission(deal)).log
+
+        mark_deal_processed(deal)
+      end
+    end
+
+    private
+
+    # One of the most conspicuous indicators of missing Object is an attribute,
+    # we're passing to many methods
+    def mark_deal_processed(deal)
+      deal.mark_as_processed
+    end
+
+    def calculate_commission(deal)
+      @_calculate_commission ||= deal.amount * 0.05
+    end
+  end
 end
 
 # Solution
 
-class DealProcessor
-  attr_reader :deals
+module SingleResponsibility
+  class DealsProcessor
+    attr_reader :deals
 
-  def initialize(deals)
-    @deals = deals
-  end
+    def initialize(deals)
+      @deals = deals
+    end
 
-  def process
-    deals.each do |deal|
-      # Now we call calculator in one operation, all logic now in it
-      CommissionCalculator.create_commission(deal) if mark_deal_processed
+    def process
+      deals.each do |deal|
+        CommissionCalculator.create_commission(deal)
+
+        deal.mark_as_processed
+      end
     end
   end
 
-  private
+  class CommissionCalculator
+    RATE = 0.05
 
-  def mark_deal_processed
-    # Implementation
+    def self.create_commission(deal)
+      Shared::Commission.new(deal: deal, amount: calculate(deal)).log
+    end
+
+    private
+
+    def self.calculate(deal)
+      deal.amount * RATE
+    end
   end
 end
-
-class CommissionCalculator
-  def self.create_commission(deal)
-    Commission.new(deal: deal, amount: calculate(deal))
-  end
-
-  private
-
-  def self.calculate(deal)
-    deal.amount * 0.05
-  end
-end
-
-class Commission
-  # Implementation
-end
-
