@@ -21,7 +21,11 @@ This is repo keeps examples with description modern principles, patterns.
     - [Hook methods](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/hook_methods.rb)
     - [Class extension mixin](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/class_extension_mixin.rb)
     - [Module mamespace interpolation](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/module_mamespace_interpolation.rb)
-    
+  - [Functional Programming](#functional-programming)
+    - [Pure Functions](https://github.com/khusnetdinov/ruby.fundamental/blob/master/functional_programming/pure_functions.rb)
+    - [Lambda](https://github.com/khusnetdinov/ruby.fundamental/blob/master/functional_programming/lambda.rb)
+    - [Closures](https://github.com/khusnetdinov/ruby.fundamental/blob/master/functional_programming/closures.rb)
+    - [Partial Application and Currying](https://github.com/khusnetdinov/ruby.fundamental/blob/master/functional_programming/partial_application_and_currying.rb)
   - [Threads](#threads)
     - [Green threads](#green-threads)
     - [GIL - Global Interpreter Lock](#gil---global-interpreter-lock)
@@ -62,7 +66,7 @@ This is repo keeps examples with description modern principles, patterns.
       - [Visitor pattern](#visitor-pattern)
   - [Data Structures](#data-structures)
     - [Basic axioms of data structures](#basic-axioms-of-data-structures)
-    - [Big O notation](#big-o-notation)  
+    - [Big O notation](#big-o-notation)
     - [Implementation](#implementation)
       - [Stack](#stack)
       - [Queue](#queue)
@@ -93,7 +97,16 @@ This is repo keeps examples with description modern principles, patterns.
 
 Metaprogramming is the writing of computer programs that write or manipulate other programs (or themselves) as their data, or that do part of the work at compile time that would otherwise be done at runtime. In many cases, this allows programmers to get more done in the same amount of time as they would take to write all the code manually, or it gives programs greater flexibility to efficiently handle new situations without recompilation. Or, more simply put: Metaprogramming is writing code that writes code during runtime to make your life easier.
 
-###
+## Functional Programming
+
+Using a language in a functional style implies you have access to a few key features:
+
+- Immutable values: once a “variable” is set, it cannot be changed. In Ruby, this means you effectively have to treat variables like constants.
+- No side-effects: when passed a given value, a function must always return the same result. This goes hand in hand with having  immutable values; a function can never take a value and change it, as this would be causing a side-effect that is tangential to returning a result.
+- Higher-order functions: these are functions that allow functions as arguments, or use functions as the return value. This is, arguably, one of the most critical features of any functional language.
+- Currying: enabled by higher-order functions, currying is transforming a function that takes multiple arguments into a function that takes one argument. This goes hand in hand with partial function application, which is transforming a multi-argument function into a function that takes less arguments then it did originally.
+- Recursion: looping by calling a function from within itself. When you don’t have access to mutable data, recursion is used to build up and chain data construction. This is because looping is not a functional concept, as it requires variables to be passed around to store the state of the loop at a given time.
+- Lazy-evaluation, or delayed-evaluation: delaying processing of values until the moment when it is actually needed. If, as an example, you have some code that generated list of Fibonacci numbers with lazy-evaluation enabled, this would not actually be processed and calculated until one of the values in the result was required by another function, such as puts.
 
 ## Threads
 
