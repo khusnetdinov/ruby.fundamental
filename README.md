@@ -208,8 +208,6 @@ Refers to a specific form of decoupling software modules. When following this pr
 
 * [https://subvisual.co/blog/posts/19-solid-principles-in-ruby](https://subvisual.co/blog/posts/19-solid-principles-in-ruby) 
 
-* [http://blog.siyelo.com/solid-principles-in-ruby/](http://blog.siyelo.com/solid-principles-in-ruby/)
-
 ## Design patterns
 
 ### Creational pattern
@@ -260,8 +258,6 @@ Ensure a class only has one instance, and provide a global point of access to it
 * [Object pool](https://en.wikipedia.org/wiki/Object_pool_pattern)
 
 * [Resource acquisition is initialization](https://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization)
-
-* [Utility](https://en.wikipedia.org/wiki/Utility_pattern)
 
 ### Structural pattern
 
@@ -518,7 +514,7 @@ OrderedListAsLinkedList |`Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)`
 
 [See ordered list as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page169.html)
 
-[See ordered list as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page178.html)
+[Read implementations steps](http://www.brpreiss.com/books/opus8/html/page178.html)
 
 #### Hash Table 
 
@@ -691,19 +687,17 @@ In computer science, binary search, also known as half-interval search or logari
 |-----:|--------:|------:|
 | `Θ(1)` | `Θ(n log(n))` | `O(log(n))` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/search/binary.rb) | [Read wiki](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+[Read wiki](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
 
 #### Knuth-Morris-Pratt search
 
 In computer science, the Knuth–Morris–Pratt string searching algorithm (or KMP algorithm) searches for occurrences of a "word" W within a main "text string" S by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin, thus bypassing re-examination of previously matched characters.
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/knuth-morris-pratt.rb) | [Read wiki](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+[Read wiki](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 
 #### Other search algorithms
 
 * [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
-
-* [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
 
 * [Kruskal's algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
 
