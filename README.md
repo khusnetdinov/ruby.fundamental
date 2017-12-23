@@ -215,7 +215,7 @@ Refers to a specific form of decoupling software modules. When following this pr
 
 #### Code and articles were taken from resources:
 
-* [https://gist.github.com/khusnetdinov/9d8f50fdcaab197871b31578f2e14d5d](https://gist.github.com/khusnetdinov/9d8f50fdcaab197871b31578f2e14d5d) 
+* [ SOLID examples](https://github.com/khusnetdinov/ruby.fundamental/blob/master/markdown/solid.md)
 
 * [https://robots.thoughtbot.com/back-to-basics-solid](https://robots.thoughtbot.com/back-to-basics-solid) 
 
@@ -416,7 +416,7 @@ In essence, the visitor allows one to add new virtual functions to a family of c
 
 #### Code and articles were taken from resources:
 
-* [https://ru.wikipedia.org/wiki/Design_Patterns](https://ru.wikipedia.org/wiki/Design_Patterns)
+* [https://en.wikipedia.org/wiki/Software_design_pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
 
 * [https://en.wikipedia.org/wiki/Creational_pattern](https://en.wikipedia.org/wiki/Creational_pattern)
 
@@ -438,27 +438,9 @@ The running time performance of the common language runtime is given by a set of
 
 [See description with examples](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/axioms.rb)
 
-#### Code and articles were taken from resources:
-
-* [Axioms](http://www.brpreiss.com/books/opus8/html/page37.html)
-
 ### Big O notation 
 
-* [Conventions for Writing Big Oh Expressions](http://www.brpreiss.com/books/opus8/html/page66.html)
-
-* [Rules For Big Oh Analysis of Running Time](http://www.brpreiss.com/books/opus8/html/page72.html)
-
-* [Reality Check](http://www.brpreiss.com/books/opus8/html/page76.html)
-
-* [Example: Ruby method with Big O explanation](http://www.brpreiss.com/books/opus8/html/page71.html)
-
-* [Example: Example-Prefix Sums](http://www.brpreiss.com/books/opus8/html/page73.html)
-
-* [Example: Bucket Sort](http://www.brpreiss.com/books/opus8/html/page75.html)
-
 ### Implementation
-
-> NOTE: All data structures are given as example for learning purpose. For using in project please refer to other resources. Most examples were taken from [Here](http://www.brpreiss.com/) witch is proper Bruno R. Preiss.
 
 #### Stack
 
@@ -468,9 +450,9 @@ The stack is the sibling of the queue. It mimicks a real-life stack (e.g. of pap
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Stack](http://en.wikipedia.org/wiki/Stack_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See stack as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page131.html)
+[See stack as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_array.rb) 
 
-[See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page137.html)
+[See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) 
 
 #### Queue
 
@@ -480,9 +462,9 @@ A queue is a simple container-based structure that mimics a real-life queue (e.g
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Queue](http://en.wikipedia.org/wiki/Queue_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page147.html)
+[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_array.rb) 
 
-[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page151.html)
+[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_linked_list.rb) 
 
 #### Deque
 
@@ -492,9 +474,9 @@ A Deque is a queue which allows adding and removing items at both ends.
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Deque](https://en.wikipedia.org/wiki/Double-ended_queue) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page158.html)
+[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_array.rb) 
 
-[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page161.html)
+[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_linked_list.rb) 
 
 #### Singly Linked List
 
@@ -504,7 +486,7 @@ Singly linked lists contain nodes which have a data field as well as a 'next' fi
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Singly-Linked List](http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb) | [Read implementations steps](http://www.brpreiss.com/books/opus8/html/page96.html#SECTION004300000000000000000) | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) 
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb)  | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) 
 
 #### Double linked list
 
@@ -525,9 +507,9 @@ An ordered list is a list in which the order of the items is significant. Howeve
 OrderedListAsArray      |`Θ(1)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(1)` | `O(n)` | `O(1)` | `O(1)` |
 OrderedListAsLinkedList |`Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See ordered list as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page169.html)
+[See ordered list as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb) 
 
-[Read implementations steps](http://www.brpreiss.com/books/opus8/html/page178.html)
+
 
 #### Hash Table 
 
@@ -537,7 +519,7 @@ A hash table  is a searchable container. As such, it provides methods for puttin
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Hash Table](http://en.wikipedia.org/wiki/Hash_table) | `Θ(n)` | `Θ(1)` | `Θ(1)` | `Θ(1)` | `Θ(n)` | `O(n)` | `O(n)` | `O(n)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/hash_table.rb) | [Rad implementation steps](http://www.brpreiss.com/books/opus8/html/page222.html)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/hash_table.rb) 
 
 #### Binary Tree
 
@@ -547,7 +529,7 @@ A binary tree is a tree in which each node can have a maximum of two children. T
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Binary Tree](https://en.wikipedia.org/wiki/Binary_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(n)` | `O(n)` | `O(n)` | `O(n)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_tree.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page286.html)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_tree.rb) 
 
 #### Binary Search Tree
 
@@ -557,7 +539,7 @@ In computer science, binary search trees (BST), sometimes called ordered or sort
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(n)` | `O(n)` | `O(n)` | `O(n)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_search_tree.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page300.html)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_search_tree.rb) 
 
 #### B Tree
 
@@ -567,7 +549,7 @@ In computer science, a B-tree is a self-balancing tree data structure that keeps
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [B-Tree](http://en.wikipedia.org/wiki/B_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | 
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/b_tree.rb) | [Read implementation steps](http://www.brpreiss.com/books/opus8/html/page339.html)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/b_tree.rb) 
 
 #### Binary Heap
 
@@ -577,13 +559,11 @@ A binary heap is a heap-ordered complete binary tree which is implemented using 
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `O(log(n))` | `O(n)` | `O(n))` | `O(log(n))` | `O(log(n))` | 
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_heap.rb) | [Read implementation steps] (http://www.brpreiss.com/books/opus8/html/page355.html)
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_heap.rb) 
 
 #### Code and articles were taken from resources:
 
 * [https://github.com/blahah/datastructures](https://github.com/blahah/datastructures)
-
-* [http://www.brpreiss.com](http://www.brpreiss.com)
 
 * [https://en.wikipedia.org/wiki/List_of_data_structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 
