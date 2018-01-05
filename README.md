@@ -20,7 +20,7 @@ This is repo keeps examples with description modern principles, patterns.
     - [Around alias](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/around_alias.rb)
     - [Hook methods](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/hook_methods.rb)
     - [Class extension mixin](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/class_extension_mixin.rb)
-    - [Module mamespace interpolation](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/module_mamespace_interpolation.rb)
+    - [Module namespace interpolation](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/module_namespace_interpolation.rb)
   - [Functional Programming](#functional-programming)
     - [Pure Functions](https://github.com/khusnetdinov/ruby.fundamental/blob/master/functional_programming/pure_functions.rb)
     - [Lambda](https://github.com/khusnetdinov/ruby.fundamental/blob/master/functional_programming/lambda.rb)
@@ -202,7 +202,7 @@ It states that, in a computer program, if S is a subtype of T, then objects of t
 Many client-specific interfaces are better than one general-purpose interface.
 
 States that no client should be forced to depend on methods it does not use.
-ISP splits interfaces which are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. Such shrunken interfaces are also called role interfaces. 
+ISP splits interfaces which are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. Such shrunken interfaces are also called role interfaces.
 ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy.
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/solid/interface_segregation.rb)
@@ -211,15 +211,15 @@ ISP is intended to keep a system decoupled and thus easier to refactor, change, 
 
 One should Depend upon Abstractions, Do not depend upon concretions.
 
-Refers to a specific form of decoupling software modules. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are inverted (i.e. reversed), thus rendering high-level modules independent of the low-level module implementation details. 
+Refers to a specific form of decoupling software modules. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are inverted (i.e. reversed), thus rendering high-level modules independent of the low-level module implementation details.
 
 #### Code and articles were taken from resources:
 
 * [ SOLID examples](https://github.com/khusnetdinov/ruby.fundamental/blob/master/markdown/solid.md)
 
-* [https://robots.thoughtbot.com/back-to-basics-solid](https://robots.thoughtbot.com/back-to-basics-solid) 
+* [https://robots.thoughtbot.com/back-to-basics-solid](https://robots.thoughtbot.com/back-to-basics-solid)
 
-* [https://subvisual.co/blog/posts/19-solid-principles-in-ruby](https://subvisual.co/blog/posts/19-solid-principles-in-ruby) 
+* [https://subvisual.co/blog/posts/19-solid-principles-in-ruby](https://subvisual.co/blog/posts/19-solid-principles-in-ruby)
 
 ## Design patterns
 
@@ -324,7 +324,7 @@ A proxy, in its most general form, is a class functioning as an interface to som
 
 * [Role Object](http://c2.com/cgi/wiki?RoleObjectPattern)
 
-### Behavioral pattern 
+### Behavioral pattern
 
 In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 
@@ -438,7 +438,7 @@ The running time performance of the common language runtime is given by a set of
 
 [See description with examples](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/axioms.rb)
 
-### Big O notation 
+### Big O notation
 
 ### Implementation
 
@@ -450,9 +450,9 @@ The stack is the sibling of the queue. It mimicks a real-life stack (e.g. of pap
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Stack](http://en.wikipedia.org/wiki/Stack_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See stack as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_array.rb) 
+[See stack as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_array.rb)
 
-[See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb) 
+[See stack as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/stack_as_linked_list.rb)
 
 #### Queue
 
@@ -462,9 +462,9 @@ A queue is a simple container-based structure that mimics a real-life queue (e.g
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Queue](http://en.wikipedia.org/wiki/Queue_(abstract_data_type)) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_array.rb) 
+[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_array.rb)
 
-[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_linked_list.rb) 
+[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/queue_as_linked_list.rb)
 
 #### Deque
 
@@ -474,9 +474,9 @@ A Deque is a queue which allows adding and removing items at both ends.
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Deque](https://en.wikipedia.org/wiki/Double-ended_queue) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_array.rb) 
+[See queue as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_array.rb)
 
-[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_linked_list.rb) 
+[See queue as linked list example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/deque_as_linked_list.rb)
 
 #### Singly Linked List
 
@@ -486,20 +486,20 @@ Singly linked lists contain nodes which have a data field as well as a 'next' fi
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Singly-Linked List](http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb)  | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list) 
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/singly_linked_list.rb)  | [Read wiki](https://en.wikipedia.org/wiki/Linked_list#Singly_linked_list)
 
 #### Double linked list
 
-In a doubly-linked list , each list element contains two references--one to its successor and one to its predecessor. 
+In a doubly-linked list , each list element contains two references--one to its successor and one to its predecessor.
 
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
-[Doubly-Linked List](http://en.wikipedia.org/wiki/Doubly_linked_list) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` | 
+[Doubly-Linked List](http://en.wikipedia.org/wiki/Doubly_linked_list) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/double_linked_list.rb)
 
 #### Ordered list
- 
+
 An ordered list is a list in which the order of the items is significant. However, the items in an ordered lists are not necessarily sorted. Consequently, it is possible to change the order of items and still have a valid ordered list.
 
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
@@ -507,11 +507,11 @@ An ordered list is a list in which the order of the items is significant. Howeve
 OrderedListAsArray      |`Θ(1)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(1)` | `O(n)` | `O(1)` | `O(1)` |
 OrderedListAsLinkedList |`Θ(n)` | `Θ(n)` | `Θ(1)` | `Θ(1)` | `O(n)` | `O(n)` | `O(1)` | `O(1)` |
 
-[See ordered list as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb) 
+[See ordered list as array example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/ordered_list_as_array.rb)
 
 
 
-#### Hash Table 
+#### Hash Table
 
 A hash table  is a searchable container. As such, it provides methods for putting an object into the container, finding an object in the container, and removing an object from the container.
 
@@ -519,17 +519,17 @@ A hash table  is a searchable container. As such, it provides methods for puttin
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Hash Table](http://en.wikipedia.org/wiki/Hash_table) | `Θ(n)` | `Θ(1)` | `Θ(1)` | `Θ(1)` | `Θ(n)` | `O(n)` | `O(n)` | `O(n)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/hash_table.rb) 
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/hash_table.rb)
 
 #### Binary Tree
 
-A binary tree is a tree in which each node can have a maximum of two children. The children are designated left and right. 
+A binary tree is a tree in which each node can have a maximum of two children. The children are designated left and right.
 
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Binary Tree](https://en.wikipedia.org/wiki/Binary_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(n)` | `O(n)` | `O(n)` | `O(n)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_tree.rb) 
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_tree.rb)
 
 #### Binary Search Tree
 
@@ -539,7 +539,7 @@ In computer science, binary search trees (BST), sometimes called ordered or sort
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
 [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(n)` | `O(n)` | `O(n)` | `O(n)` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_search_tree.rb) 
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_search_tree.rb)
 
 #### B Tree
 
@@ -547,9 +547,9 @@ In computer science, a B-tree is a self-balancing tree data structure that keeps
 
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
-[B-Tree](http://en.wikipedia.org/wiki/B_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | 
+[B-Tree](http://en.wikipedia.org/wiki/B_tree) | `Θ(log(n))` | `Θ(log(n))` | `Θ(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` | `O(log(n))` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/b_tree.rb) 
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/b_tree.rb)
 
 #### Binary Heap
 
@@ -557,9 +557,9 @@ A binary heap is a heap-ordered complete binary tree which is implemented using 
 
 | Structure | Average Access | Average Search | Average Insertion | Average Deletion | Worst Access | Worst Search | Worst Insertion | Worst Deletion |
 |-----------|---------------:|---------------:|------------------:|-----------------:|-------------:|-------------:|----------------:|---------------:|
-[Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `O(log(n))` | `O(n)` | `O(n))` | `O(log(n))` | `O(log(n))` | 
+[Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) | `Θ(n)` | `Θ(n)` | `Θ(1)` | `O(log(n))` | `O(n)` | `O(n))` | `O(log(n))` | `O(log(n))` |
 
-[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_heap.rb) 
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/structures/binary_heap.rb)
 
 #### Code and articles were taken from resources:
 
@@ -644,7 +644,7 @@ There do exist linear time in-place merge algorithms for the last step of the al
 
 | Best | Average | Worst |
 |-----:|--------:|------:|
-| `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` | 
+| `Ω(n log(n))` | `Θ(n log(n))` | `O(n log(n))` |
 
 [See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/algorithms/sort/merge.rb) | [Read wiki](https://en.wikipedia.org/wiki/Merge_sort)
 
