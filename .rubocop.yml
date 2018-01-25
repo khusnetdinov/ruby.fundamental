@@ -1,0 +1,59 @@
+AllCops:
+
+  Documentation:
+    Enabled: false
+
+  Layout/ClassStructure:
+    Categories:
+      module_inclusion:
+        - extend
+        - include
+        - prepend
+      association:
+        - has_one
+        - has_many
+      attribute:
+        - attr_accessor
+        - attr_reader
+        - attr_writer
+      ExpectedOrder:
+        - module_inclusion
+        - constants
+        - public_class_methods
+        - initializer
+        - public_methods
+        - protected_methods
+        - private_methods
+
+  Lint/EndAlignment:
+    EnforcedStyleAlignWith: variable
+
+  Layout/IndentArray:
+    EnforcedStyle: consistent
+
+  Layout/IndentHash:
+    EnforcedStyle: consistent
+
+  Layout/MultilineAssignmentLayout:
+    EnforcedStyle: same_line
+
+  Metrics/BlockLength:
+    Exclude:
+      - '../spec/**/*'
+
+  Metrics/LineLength:
+    Max: 120
+
+  Naming/FileName:
+    Exclude:
+      - '..//Gemfile'
+      - '..//Rakefile'
+
+  Style/PercentLiteralDelimiters:
+    PreferredDelimiters:
+      default: []
+      '%i': '[]'
+      '%I': '[]'
+      '%w': '[]'
+      '%W': '[]'
+      '%r': '{}'
