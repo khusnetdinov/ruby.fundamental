@@ -7,7 +7,7 @@
 # the incoming message (e.g. `get_name`, `get_age`) and to delegate off to
 # another method such as `get(:data_type)` where `:data_type` is `:name` or `:age`.
 def method_missing(message, *args, &block)
-  return get($1.to_sym, *args, &block) if message.to_s =~ /^get_(.*)/
+  return get(Regexp.last_match(1).to_sym, *args, &block) if message.to_s.match?(/^get_(.*)/)
   super # if we don't find a match then we'll call the top level `BasicObject#method_missing`
 end
 

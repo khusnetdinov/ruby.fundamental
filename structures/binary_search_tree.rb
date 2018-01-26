@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class BinarySearchTree < BinaryTree
-
   include SearchTreeMethods
 
   def initialize(*args)
@@ -27,11 +26,11 @@ class BinarySearchTree < BinaryTree
 
   def min
     if empty?
-      return nil
+      nil
     elsif @left.empty?
-      return @key
+      @key
     else
-      return @left.min
+      @left.min
     end
   end
 
@@ -52,24 +51,23 @@ class BinarySearchTree < BinaryTree
   end
 
   def attachKey(obj)
-    raise StateError if not empty?
+    raise StateError unless empty?
     @key = obj
     @left = BinarySearchTree.new
     @right = BinarySearchTree.new
   end
 
-  def balance
-  end
+  def balance; end
 
   def withdraw(obj)
     raise ArgumentError if empty?
     diff = obj <=> @key
     if diff == 0
-      if not @left.empty?
+      if !@left.empty?
         max = @left.max
         @key = max
         @left.withdraw(max)
-      elsif not @right.empty?
+      elsif !@right.empty?
         min = @right.min
         @key = min
         @right.withdraw(min)
@@ -83,5 +81,4 @@ class BinarySearchTree < BinaryTree
     end
     balance
   end
-
 end

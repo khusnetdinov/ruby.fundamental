@@ -22,12 +22,9 @@ class FileParser
       parse_xml
     when :cvs
       parse_cvs
-    # when :json
-    #  parse_json
-    else
-      # Implementation
+      # when :json
+      # parse_json
     end
-
   end
 
   private
@@ -59,26 +56,25 @@ class FileParser
 
   def parse(file)
     # Now if we want new parser just write new Class and pass it to method
-    Data.new(parser.parse file)
+    Data.new(parser.parse(file))
   end
 end
 
 class JsonParser
   # We write new class for extension solution.
-  def self.parse(file)
+  def self.parse(_file)
     # Implementation
   end
 end
 
 class XmlParser
-  def self.parse(file)
+  def self.parse(_file)
     # Implementation
   end
 end
 
 class CvsParser
-  def self.parse(file)
-  # Implementation
+  def self.parse(_file)
+    # Implementation
   end
 end
-

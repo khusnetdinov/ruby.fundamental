@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class OrderedListAsLinkedList < OrderedList
-
   def initialize
     super
     @linkedList = SinglyLinkedList.new
@@ -22,10 +21,10 @@ class OrderedListAsLinkedList < OrderedList
   end
 
   def [](offset)
-    raise IndexError if not (0 ... @count) === offset
+    raise IndexError unless (0...@count) === offset
     ptr = @linkedList.head
     i = 0
-    while i < offset and not ptr.nil?
+    while (i < offset) && !ptr.nil?
       ptr = ptr.succ
       i += 1
     end
@@ -34,7 +33,7 @@ class OrderedListAsLinkedList < OrderedList
 
   def member?(obj)
     ptr = @linkedList.head
-    while not ptr.nil?
+    until ptr.nil?
       return true if ptr.datum.equal?(obj)
       ptr = ptr.succ
     end
@@ -43,7 +42,7 @@ class OrderedListAsLinkedList < OrderedList
 
   def find(arg)
     ptr = @linkedList.head
-    while not ptr.nil?
+    until ptr.nil?
       return ptr.datum if ptr.datum == arg
       ptr = ptr.succ
     end
@@ -58,7 +57,7 @@ class OrderedListAsLinkedList < OrderedList
 
   def findPosition(obj)
     ptr = @linkedList.head
-    while not ptr.nil?
+    until ptr.nil?
       break if ptr.datum == obj
       ptr = ptr.succ
     end
@@ -66,7 +65,6 @@ class OrderedListAsLinkedList < OrderedList
   end
 
   class Cursor
-
     def initialize(list, element)
       @list = list
       @element = element
@@ -86,5 +84,4 @@ class OrderedListAsLinkedList < OrderedList
       @list.count -= 1
     end
   end
-
 end

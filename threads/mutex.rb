@@ -8,7 +8,7 @@
 # Array, no other threads will be able to enter that portion of code until the
 # first thread is finished. This operation is now thread-safe.
 
-shared_array = Array.new
+shared_array = []
 # Notice that the mutex is shared among all the threads. The guarantee only
 # works if the threads are sharing the same Mutex instance. In this way, when
 # one thread locks a mutex, others have to wait for it to be unlocked.
@@ -39,8 +39,6 @@ puts shared_array.size
 # this bit of code will lock the mutex. it then becomes the owner of that mutex.
 # Until the owning thread unlocks the mutex, no other thread can lock it.
 
-
 # $ ruby  => 10000
 # $ jruby => 10000
 # $ rbx => 1000
-

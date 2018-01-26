@@ -52,7 +52,7 @@ class EnvironmentFactory
   attr_reader :factories
 
   def initialize
-    @factories = %w(PondFactory JungleFactory)
+    @factories = %w[PondFactory JungleFactory]
   end
 
   def get_factory(method)
@@ -76,4 +76,3 @@ end
 environment = EnvironmentFactory.new
 jungle = environment.get_factory(:jungle)
 jungle.new_animal
-

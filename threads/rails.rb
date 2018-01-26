@@ -2,11 +2,11 @@
 # Let’s take a look at the threadsafe! method:
 
 def threadsafe!
- @preload_frameworks = true
- @cache_classes      = true
- @dependency_loading = false
- @allow_concurrency  = true
- self
+  @preload_frameworks = true
+  @cache_classes      = true
+  @dependency_loading = false
+  @allow_concurrency  = true
+  self
 end
 
 # Calling this method sets four options in our app configuration. Let’s walk
@@ -53,4 +53,3 @@ end
 # multiple threads from executing your controller code at the same time. When
 # threadsafe! is set, this middleware is removed, and controller code can be
 # executed in parallel.
-

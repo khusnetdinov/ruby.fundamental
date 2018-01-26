@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class BinaryTree < Tree
-
   def initialize(*args)
     super()
     case args.length
@@ -70,5 +69,4 @@ class BinaryTree < Tree
       return result
     end
   end
-
 end

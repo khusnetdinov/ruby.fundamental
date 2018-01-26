@@ -2,7 +2,6 @@
 # object a chance to handle the request. Chain the receiving objects and pass
 # the request along the chain until an object handles it.
 
-
 # Implements the chain of responsibility pattern. Does not know anything
 # about the approval process, merely whether the current handler can approve
 # the request, or must pass it to a successor.
@@ -15,7 +14,7 @@ class PurchaseApprover
 
   def process_request(request)
     if approve_request request
-      return
+      nil
     elsif successor
       successor.process_request request
     else
@@ -25,7 +24,7 @@ class PurchaseApprover
 
   # This may be overridden by a handler if it wants to provide a custom action
   # when it is the last member of the chain
-  def deny_request request
+  def deny_request(request)
     # Implementation
   end
 end
@@ -38,9 +37,9 @@ class AmountApprover < PurchaseApprover
   def approve_request(request)
     if request.amount < self.class::ALLOWABLE
       print_approval request
-      return true
+      true
     else
-      return false
+      false
     end
   end
 end
@@ -64,7 +63,7 @@ end
 class VicePresident < AmountApprover
   ALLOWABLE = 40 * BASE
 
-  def print_approval request
+  def print_approval(request)
     puts "VicePresident will approve $#{request.amount}"
   end
 end
@@ -82,9 +81,9 @@ class ChiefFinancialOperations < PurchaseApprover
   def approve_request(request)
     if within_annual_budget? request
       puts "CFO will approve $#{request.amount}"
-      return true
+      true
     else
-      return false
+      false
     end
   end
 
@@ -118,7 +117,7 @@ class CLP
   def build_approvers(approver_classes)
     [].tap do |approvers|
       approver_classes.reverse.inject(nil) do |successor, approver|
-        approver.new(successor).tap {|approver| approvers.unshift approver }
+        approver.new(successor).tap { |approver| approvers.unshift approver }
       end
     end
   end

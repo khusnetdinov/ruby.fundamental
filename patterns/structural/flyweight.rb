@@ -31,7 +31,7 @@ class LampFactory
   end
 
   def find_lamp(color)
-    if lamps.has_key?(color)
+    if lamps.key?(color)
       lamp = lamps[color]
     else
       lamp = Lamp.new(color)
@@ -60,14 +60,14 @@ class ChristmasTree
     lamps_hung += 1
   end
 
-  def dress_up_the_tree(&block)
+  def dress_up_the_tree
     yield self if block_given?
   end
 end
 
 # Usage
 christmas_tree = ChristmasTree.new
-christmas_tree.dress_up_the_tree {
+christmas_tree.dress_up_the_tree do
   hang_lamp('red', 1)
   hang_lamp('blue', 1)
   hang_lamp('yellow', 1)
@@ -89,4 +89,4 @@ christmas_tree.dress_up_the_tree {
   hang_lamp('red', 7)
   hang_lamp('blue', 7)
   hang_lamp('yellow', 7)
-}
+end

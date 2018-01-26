@@ -34,7 +34,7 @@ class Quest
   end
 
   def reward
-    @tasks.inject(0){ |sum, task| sum += task.reward }
+    @tasks.inject(0) { |sum, task| sum += task.reward }
   end
 end
 

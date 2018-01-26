@@ -10,15 +10,15 @@ class SinglyLinkedList
     attr_accessor :data, :succ
 
     def initialize(list, data, succ)
-      @list, @data, @succ = list, data, succ
+      @list = list
+      @data = data
+      @succ = succ
     end
 
     def insert_after(item)
       @succ = Element.new(@list, item, @succ)
 
-      if @list.tail.equal?(self)
-        @list.tail = @succ
-      end
+      @list.tail = @succ if @list.tail.equal?(self)
     end
 
     def insert_before(item)
@@ -28,7 +28,7 @@ class SinglyLinkedList
         @list.head = tmp
       else
         prevElem = @list.head
-        while not prevElem.nil? and not prevElem.succ.equal?(self)
+        while !prevElem.nil? && !prevElem.succ.equal?(self)
           prevElem = prevElem.succ
         end
         prevElem.succ = tmp
@@ -83,7 +83,7 @@ class SinglyLinkedList
     else
       @tail.succ = temp
     end
-    
+
     @tail = temp
   end
 
@@ -91,7 +91,7 @@ class SinglyLinkedList
     linked_list = SinglyLinkedList.new
 
     elem = @head
-    while not elem.nil?
+    until elem.nil?
       linked_list.append elem.data
       elem = @head.succ
     end
@@ -101,9 +101,9 @@ class SinglyLinkedList
 
   def extract
     elem = @head
-    
+
     prevElem = nil
-    while not elem.nil? and not elem.data.equal?(item)
+    while !elem.nil? && !elem.data.equal?(item)
       prevElem = elem
       elem = elem.succ
     end
@@ -116,14 +116,12 @@ class SinglyLinkedList
       prevElem.succ = elem.succ
     end
 
-    if elem == @tail
-      @tail = prevElem
-    end
+    @tail = prevElem if elem == @tail
   end
 
   def each
     elem = @head
-    while not elem.nil?
+    until elem.nil?
       yield ptr.data
       elem = elem.succ
     end

@@ -7,4 +7,3 @@ say_hello = ->(name) { puts "Hello #{ name }" }
 
 say_hello.call("Mark")
 say_hello.("Mark")
-

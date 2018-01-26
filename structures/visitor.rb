@@ -6,11 +6,9 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Visitor < AbstractObject
-
   abstractmethod :visit
 
   def done?
     false
   end
-
 end

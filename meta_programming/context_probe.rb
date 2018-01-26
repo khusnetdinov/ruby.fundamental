@@ -17,7 +17,8 @@ foo.instance_eval { puts @z } # => 2
 # There is also `instance_exec` which works the same way but allows passing arguments to the block
 class Foo
   def initialize
-    @x, @y = 1, 2
+    @x = 1
+    @y = 2
   end
 end
 Foo.new.instance_exec(3) { |arg| (@x + @y) * arg } # => 9

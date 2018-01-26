@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class OrderedListAsArray < OrderedList
-
   def initialize(size = 0)
     super()
     @array = Array.new(size)
@@ -23,14 +22,14 @@ class OrderedListAsArray < OrderedList
   end
 
   def member?(obj)
-    for i in 0 ... @count
+    for i in 0...@count
       return true if @array[i].equal?(obj)
     end
     false
   end
 
   def find(obj)
-    for i in 0 ... @count
+    for i in 0...@count
       return @array[i] if @array[i] == obj
     end
     nil
@@ -39,9 +38,7 @@ class OrderedListAsArray < OrderedList
   def withdraw(obj)
     raise ContainerEmpty if @count == 0
     i = 0
-    while i < @count and not @array[i].equal?(obj)
-      i += 1
-    end
+    i += 1 while (i < @count) && !@array[i].equal?(obj)
     raise ArgumentError if i == @count
     while i < @count - 1
       @array[i] = @array[i + 1]
@@ -52,7 +49,6 @@ class OrderedListAsArray < OrderedList
   end
 
   class Cursor
-
     def initialize(list, offset)
       super()
       @list = list
@@ -60,30 +56,26 @@ class OrderedListAsArray < OrderedList
     end
 
     def datum
-      raise IndexError if not (0 ... @list.count) === offset
+      raise IndexError unless (0...@list.count) === offset
       @list[@offset]
     end
-
   end
 
   def findPosition(obj)
     i = 0
-    while i < @count and not @array[i] == obj
-      i += 1
-    end
+    i += 1 while (i < @count) && (@array[i] != obj)
     Cursor.new(self, i)
   end
 
   def [](offset)
-    raise IndexError if not (0 ... @count) === offset
+    raise IndexError unless (0...@count) === offset
     @array[offset]
   end
 
   class Cursor < Cursor
-
     def insertAfter(obj)
-      raise IndexError if not (0 ... @list.count) === @offset
-      raise ContainerFull if 	@list.count == @list.array.length
+      raise IndexError unless (0...@list.count) === @offset
+      raise ContainerFull if	@list.count == @list.array.length
       insertPosition = @offset + 1
       i = @list.count
       while i > insertPosition
@@ -95,7 +87,7 @@ class OrderedListAsArray < OrderedList
     end
 
     def withdraw
-      raise IndexError if not (0 ... @list.count) === @offset
+      raise IndexError unless (0...@list.count) === @offset
       raise ContainerEmpty if @list.count == 0
       i = @offset
       while i < @list.count - 1
@@ -105,8 +97,5 @@ class OrderedListAsArray < OrderedList
       @list.array[i] = nil
       @list.count -= 1
     end
-
   end
-
 end
-

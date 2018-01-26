@@ -6,11 +6,10 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Array
-
   attr_accessor :baseIndex
-  alias_method :init, :initialize
-  alias_method :getitem, :[]
-  alias_method :setitem, :[]=
+  alias init initialize
+  alias getitem []
+  alias setitem []=
 
   def initialize(size = 0, baseIndex = 0)
     init(size, nil)
@@ -20,14 +19,14 @@ class Array
   def length=(value)
     tmp = Array.new(value, nil)
 
-    for i in 0 ... [length, value].min
+    for i in 0...[length, value].min
       tmp.setitem(i, getitem(i))
     end
 
     clear
     setitem(value - 1, nil) if value > 0
 
-    for i in 0 ... tmp.length
+    for i in 0...tmp.length
       setitem(i, tmp.getitem(i))
     end
   end
@@ -36,7 +35,7 @@ class Array
 
   def getOffset(index)
     @baseIndex = 0 if @baseIndex.nil?
-    raise IndexError if not  (@baseIndex ... @baseIndex + length) === index
+    raise IndexError unless (@baseIndex...@baseIndex + length) === index
     index - @baseIndex
   end
 

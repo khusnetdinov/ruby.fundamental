@@ -12,19 +12,19 @@ class Decorator
 
   # Dynamic method that added in decorator
   def another_use
-    item.use + "another way"
+    item.use + 'another way'
   end
 end
 
 class MagicDecorator < Decorator
   def description
-    @item.description + "Magic"
+    @item.description + 'Magic'
   end
 end
 
 class MasterpieceDecorator < Decorator
   def description
-    @item.description + "Masterpiece"
+    @item.description + 'Masterpiece'
   end
 end
 
@@ -33,11 +33,11 @@ class Item
   attr_reader :description
 
   def initialize
-    @description = "Item "
+    @description = 'Item '
   end
 
   def use
-    "use it"
+    'use it'
   end
 end
 

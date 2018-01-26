@@ -28,7 +28,9 @@ class Employee
 
   def initialize(name, title, salary)
     super()
-    @name, @title, @salary = name, title, salary
+    @name = name
+    @title = title
+    @salary = salary
   end
 end
 
@@ -52,11 +54,11 @@ class TaxMan < BaseObserver
 end
 
 # Usage
-mike = Employee.new('Mike', 'project manger', 25000)
+mike = Employee.new('Mike', 'project manger', 25_000)
 
 mike.add_observer(Payroll.new)
 mike.add_observer(TaxMan.new)
 
-mike.salary = 35000
+mike.salary = 35_000
 mike.title = 'senior project manger'
 mike.notify_observers

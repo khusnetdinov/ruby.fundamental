@@ -18,8 +18,8 @@ class Array
 
   def merge(left, right)
     sorted = []
-    until left.empty? or right.empty?
-      left.first <= right.first ? sorted << left.shift : sorted << right.shift
+    until left.empty? || right.empty?
+      sorted << (left.first <= right.first ? left.shift : right.shift)
     end
     sorted + left + right
   end

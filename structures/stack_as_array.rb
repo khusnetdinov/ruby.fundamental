@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class StackAsArray < Stack
-
   def initialize(size = 0)
     super()
     @array = Array.new(size)
@@ -30,16 +29,16 @@ class StackAsArray < Stack
     @count -= 1
     result = @array[@count]
     @array[@count] = nil
-    return result
+    result
   end
 
   def top
     raise ContainerEmpty if @count == 0
-    return @array[@count - 1]
+    @array[@count - 1]
   end
 
   def each
-    for i in 0 ... @count
+    for i in 0...@count
       yield @array[i]
     end
   end
@@ -47,7 +46,6 @@ class StackAsArray < Stack
   attr_reader :array
 
   class Iterator < Opus8::Iterator
-
     def initialize(stack)
       @stack = stack
       @position = 0
@@ -65,12 +63,11 @@ class StackAsArray < Stack
       else
         result = nil
       end
-      return result
+      result
     end
   end
 
   def iter
     Iterator.new(self)
   end
-
 end

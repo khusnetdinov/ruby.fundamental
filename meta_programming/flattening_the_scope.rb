@@ -8,7 +8,7 @@
 #
 # In the following code we want to access `my_var` from inside the method (inner scope gate) that's
 # inside the class (outer scope gate).
-my_var = "abc"
+my_var = 'abc'
 class OuterScopeGate
   puts my_var
 
@@ -20,7 +20,7 @@ end
 # We fix this by flattening the code into method calls (method *calls* aren't scope gates)
 # So we turn the class keyword into a method call using `Class.new`
 # We also turn the method inside the class from a keyword into a method call using `define_method`
-my_var = "abc"
+my_var = 'abc'
 MyClass = Class.new do
   puts "Here is 'my_var' inside my class definition: #{my_var}"
 

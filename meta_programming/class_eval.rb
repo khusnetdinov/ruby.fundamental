@@ -5,16 +5,20 @@
 
 # Classic class re-opening style
 class String
-  def m; puts "hello!" end
+  def m
+    puts 'hello!'
+  end
 end
 
 # Class eval style
 # The extra code is used to make the example a bit more re-usable/abstracted
 def add_method_to_class(the_class)
   the_class.class_eval do
-    def m; puts "hello!" end
+    def m
+      puts 'hello!'
+    end
   end
 end
 
 add_method_to_class String
-"abc".m # => hello!
+'abc'.m # => hello!

@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Matrix
-
   def initialize(numberOfRows, numberOfColumns)
     assert { numberOfRows >= 0 }
     assert { numberOfColumns >= 0 }
@@ -24,5 +23,4 @@ class Matrix
   abstractmethod :*
 
   abstractmethod :transpose
-
 end

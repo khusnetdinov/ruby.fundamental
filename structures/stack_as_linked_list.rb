@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class StackAsLinkedList < Stack
-
   def initialize
     super
     @list = SinglyLinkedList.new
@@ -27,12 +26,12 @@ class StackAsLinkedList < Stack
     result = @list.first
     @list.extract(result)
     @count -= 1
-    return result
+    result
   end
 
   def top
     raise ContainerEmpty if @count == 0
-    return @list.first
+    @list.first
   end
 
   def each(&block)
@@ -42,13 +41,12 @@ class StackAsLinkedList < Stack
   attr_reader :list
 
   class Iterator < Opus8::Iterator
-
     def initialize(stack)
       @position = stack.list.head
     end
 
     def more?
-      not @position.nil?
+      !@position.nil?
     end
 
     def succ
@@ -58,12 +56,11 @@ class StackAsLinkedList < Stack
       else
         result = nil
       end
-      return result
+      result
     end
   end
 
   def iter
     Iterator.new(self)
   end
-
 end

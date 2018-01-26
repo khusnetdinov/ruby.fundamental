@@ -70,5 +70,4 @@ class DoubleLinkedList < SinglyLinkedList
   def extract
     # Todo
   end
-
 end

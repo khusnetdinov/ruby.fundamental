@@ -26,23 +26,23 @@ class ComputerBuilder
     @computer = Computer.new
   end
 
-  def turbo(has_turbo_cpu = true)
+  def turbo(_has_turbo_cpu = true)
     computer.cpu = TurboCPU.new
   end
 
   def display=(display)
-    computer.display=display
+    computer.display = display
   end
 
   def memory_size=(size_in_mb)
     computer.memory_size = size_in_mb
   end
 
-  def add_cd(writer=false)
+  def add_cd(writer = false)
     computer.drives << Drive.new(:cd, 760, writer)
   end
 
-  def add_dvd(writer=false)
+  def add_dvd(writer = false)
     computer.drives << Drive.new(:dvd, 4000, writer)
   end
 
@@ -62,4 +62,3 @@ computer_builder.add_cd = false
 computer_builder.memory_size = '12mb'
 
 computer = computer_builder.computer
-

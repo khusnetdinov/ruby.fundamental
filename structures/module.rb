@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Module
-
   def abstractmethod(symbol)
     module_eval <<-"end_eval"
 	    def #{symbol.id2name}(*args)
@@ -14,5 +13,4 @@ class Module
 	    end
     end_eval
   end
-
 end

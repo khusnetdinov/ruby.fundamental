@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 module SearchableContainerMethods
-
   abstractmethod :member?
 
   abstractmethod :insert
@@ -14,34 +13,27 @@ module SearchableContainerMethods
   abstractmethod :withdraw
 
   abstractmethod :find
-
 end
 
 class SearchableContainer < Container
-
   include SearchableContainerMethods
 
   def initialize
     super
   end
-
 end
 
 module SearchTreeMethods
-
   abstractmethod :min
 
   abstractmethod :max
-
 end
 
 class SearchTree < Tree
-
   def initialize
     super
   end
 
   include SearchableContainerMethods
   include SearchTreeMethods
-
 end

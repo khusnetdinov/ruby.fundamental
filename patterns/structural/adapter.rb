@@ -26,4 +26,3 @@ end
 
 adaptor = Adaptor.new
 adaptor.walk # => walk_as_adaptor and_sing_song_as_adaptor
-
