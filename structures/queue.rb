@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Queue < Container
-
   def initialize
     super
   end
@@ -16,5 +15,4 @@ class Queue < Container
   abstractmethod :dequeue
 
   abstractmethod :head
-
 end

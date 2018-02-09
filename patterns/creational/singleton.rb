@@ -21,4 +21,3 @@ end
 # Usage
 s1 = Singleton.new
 s2 = OtherSingleton.instance
-

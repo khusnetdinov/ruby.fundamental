@@ -89,4 +89,3 @@ end
 class Commission
   # Implementation
 end
-

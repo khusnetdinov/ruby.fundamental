@@ -12,9 +12,9 @@ class Array
     inc = length / 2
 
     while inc != 0
-      inc.step(length-1) do |i|
+      inc.step(length - 1) do |i|
         el = self[i]
-        while i >= inc and self[i - inc] > el
+        while i >= inc && self[i - inc] > el
           self[i] = self[i - inc]
           i -= inc
         end

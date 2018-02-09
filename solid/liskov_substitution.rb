@@ -79,4 +79,3 @@ class Cat < Animal
     'run_as_cat'
   end
 end
-

@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class QueueAsLinkedList < Queue
-
   def initialize
     super
     @list = SinglyLinkedList.new
@@ -34,5 +33,4 @@ class QueueAsLinkedList < Queue
     @count -= 1
     result
   end
-
 end

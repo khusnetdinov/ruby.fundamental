@@ -33,7 +33,7 @@ bank.add Account.new(100)
 bank.add Account.new(150)
 bank.add Account.new(175)
 
-puts bank.map { |account| account.balance }
+puts bank.map(&:balance)
 
 # Internal iterator
 class Collection
@@ -42,7 +42,7 @@ class Collection
     @index = 0
   end
 
-  def has_next?
+  def next?
     @index < @array.length
   end
 
@@ -52,10 +52,8 @@ class Collection
     value
   end
 
-  def iterate(&block)
-    while has_next?
-      block.call(next_item) if block_given?
-    end
+  def iterate
+    yield(next_item) if block_given? while next?
   end
 end
 
@@ -70,7 +68,7 @@ class Collection
     @index = 0
   end
 
-  def has_next?
+  def next?
     @index < @array.length
   end
 
@@ -83,5 +81,4 @@ end
 
 # Usage
 collection = Collection.new([1, 2, 3, 4, 5])
-puts "Item: #{collection.next_item}" while collection.has_next?
-
+puts "Item: #{collection.next_item}" while collection.next?

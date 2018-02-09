@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Container < AbstractObject
-
   include ::Enumerable
 
   def initialize
@@ -32,18 +31,16 @@ class Container < AbstractObject
 
   def each
     i = iter
-    while i.more?
-      yield i.succ
-    end
+    yield i.succ while i.more?
   end
 
   def to_s
-    s = ""
+    s = ''
     each do |obj|
-      s << ", " if not s.empty?
+      s << ', ' unless s.empty?
       s << obj.to_s
     end
-    type.name + "{" + s + "}"
+    type.name + '{' + s + '}'
   end
 
   def accept(visitor)
@@ -53,6 +50,4 @@ class Container < AbstractObject
       visitor.visit(obj)
     end
   end
-
 end
-

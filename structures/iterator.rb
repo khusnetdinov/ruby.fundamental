@@ -6,9 +6,7 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Iterator < AbstractObject
-
   abstractmethod :more?
 
   abstractmethod :succ
-
 end

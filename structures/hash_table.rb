@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class HashTable < SearchableContainer
-
   def initialize
     super
   end
@@ -14,7 +13,7 @@ class HashTable < SearchableContainer
   abstractmethod :length
 
   def loadFactor
-    return count / length
+    count / length
   end
 
   def f(obj)
@@ -28,15 +27,13 @@ class HashTable < SearchableContainer
   def h(obj)
     g(f(obj))
   end
-
 end
 
 class ChainedHashTable < HashTable
-
   def initialize(length)
     super()
     @array = Array.new(length)
-    for i in 0 ... length
+    for i in 0...length
       @array[i] = SinglyLinkedList.new
     end
   end
@@ -46,7 +43,7 @@ class ChainedHashTable < HashTable
   end
 
   def purge
-    for i in 0 ... length
+    for i in 0...length
       @array[i].purge
     end
     @count = 0
@@ -64,11 +61,10 @@ class ChainedHashTable < HashTable
 
   def find(obj)
     ptr = @array[h(obj)].head
-    while not ptr.nil?
+    until ptr.nil?
       return ptr.datum if ptr.datum == obj
       ptr = ptr.succ
     end
     nil
   end
-
 end

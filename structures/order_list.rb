@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class OrderedList < SearchableContainer
-
   def initialize
     super
   end
@@ -14,5 +13,4 @@ class OrderedList < SearchableContainer
   abstractmethod :[]
 
   abstractmethod :findPosition
-
 end

@@ -6,8 +6,7 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class DequeAsLinkedList < QueueAsLinkedList
-
-  alias_method :queueHead, :head
+  alias queueHead head
 
   include DequeMethods
 
@@ -15,21 +14,21 @@ class DequeAsLinkedList < QueueAsLinkedList
     super
   end
 
-  alias_method :head, :queueHead
+  alias head queueHead
 
   def enqueueHead(obj)
     @list.prepend(obj)
     @count += 1
   end
 
-  alias_method :dequeueHead, :dequeue
+  alias dequeueHead dequeue
 
   def tail
     raise ContainerEmpty if @count == 0
     @list.last
   end
 
-  alias_method :enqueueTail, :enqueue
+  alias enqueueTail enqueue
 
   def dequeueTail
     raise ContainerEmpty if @count == 0
@@ -38,5 +37,4 @@ class DequeAsLinkedList < QueueAsLinkedList
     @count -= 1
     result
   end
-
 end

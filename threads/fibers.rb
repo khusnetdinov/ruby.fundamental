@@ -12,11 +12,10 @@ f = Fiber.new do |value|
   puts "second call fiber with args: #{second ? second : 'not passed'}"
   other = Fiber.yield
   puts "First: #{first}, Second: #{second}, Other: #{other ? other : 'not passed'}"
-  puts "Last call"
+  puts 'Last call'
 end
 
 f.resume('First argument')
 f.resume('Second argument')
 f.resume
 # f.resume call error if try call one more time fiber is dead
-

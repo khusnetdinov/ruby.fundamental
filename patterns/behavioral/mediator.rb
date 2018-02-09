@@ -93,6 +93,3 @@ seller.use_agency_for_selling_house agency, house
 buyer.buy house
 
 puts house.inspect
-
-
-

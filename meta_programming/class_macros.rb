@@ -8,9 +8,17 @@
 # to the new methods (rather than using `method_missing` which can be quite slow as it has to spend
 # time looking up the inheritance chain)
 class Foo
-  def get_a; puts "I'm an A" end
-  def get_b; puts "I'm an B" end
-  def get_c; puts "I'm an C" end
+  def get_a
+    puts "I'm an A"
+  end
+
+  def get_b
+    puts "I'm an B"
+  end
+
+  def get_c
+    puts "I'm an C"
+  end
 
   # Defining our Class Macro
   def self.deprecate(old_method, new_method)

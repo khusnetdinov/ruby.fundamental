@@ -3,7 +3,7 @@
 # define_method :method_name { block that becomes method body }
 class Foo
   define_method :bar do
-    puts "This is a dynamic method"
+    puts 'This is a dynamic method'
   end
 end
 Foo.new.bar # => "This is a dynamic method"
@@ -31,13 +31,16 @@ Bar.new.my_baz # => "Dynamic method called 'my_baz'"
 # Parse another class for data
 class AnotherClass
   def get_foo_stuff; end
+
   def get_bar_stuff; end
+
   def get_baz_stuff; end
 end
 class Baz
   def initialize(a_class)
-    a_class.methods.grep(/^get_(.*)_stuff$/) { Baz.create_method $1 }
+    a_class.methods.grep(/^get_(.*)_stuff$/) { Baz.create_method Regexp.last_match(1) }
   end
+
   def self.create_method(method)
     define_method "my_#{method}" do
       puts "Dynamic method called 'my_#{method}'"
@@ -54,5 +57,5 @@ class Foo
     self.class.send(:define_method, bar) { p "hello #{bar}!" }
   end
 end
-foo = Foo.new("world")
+foo = Foo.new('world')
 foo.world # => "hello world!"

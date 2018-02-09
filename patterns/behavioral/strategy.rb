@@ -4,19 +4,19 @@
 # Strategies
 class StrategyOne
   def use
-    puts "Strategy one"
+    puts 'Strategy one'
   end
 end
 
 class StrategyTwo
   def use
-    puts "Strategy two"
+    puts 'Strategy two'
   end
 end
 
 class StrategyThree
   def use
-    puts "Strategy three"
+    puts 'Strategy three'
   end
 end
 
@@ -39,4 +39,3 @@ context.use # => "Strategy one"
 
 context.set_strategy StrategyTwo.new
 context.use # => "Strategy two"
-

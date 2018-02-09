@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class BTree < MWayTree
-
   def initialize(m)
     super
     @parent = nil
@@ -31,18 +30,18 @@ class BTree < MWayTree
       end
     else
       index = findIndex(obj)
-      raise ArgumentError if index != 0 and @key == obj
+      raise ArgumentError if (index != 0) && (@key == obj)
       @subtree[index].insert(obj)
     end
   end
 
   def insertUp(obj, child)
     index = findIndex(obj)
-    if not full?
+    if !full?
       insertPair(index + 1, obj, child)
-      @count = @count + 1
+      @count += 1
     else
-      extraKey, extraTree = insertPair(index+1, obj, child)
+      extraKey, extraTree = insertPair(index + 1, obj, child)
       if @parent.nil?
         left = BTree.new(m)
         right = BTree.new(m)
@@ -50,18 +49,16 @@ class BTree < MWayTree
         right.attachRightHalfOf(self)
         right.insertUp(extraKey, extraTree)
         attachSubtree(0, left)
-        @key[1] = @key[(m + 1)/2]
+        @key[1] = @key[(m + 1) / 2]
         attachSubtree(1, right)
         @count = 1
       else
-        @count = (m + 1)/2 - 1
+        @count = (m + 1) / 2 - 1
         right = BTree.new(m)
         right.attachRightHalfOf(self)
         right.insertUp(extraKey, extraTree)
-        @parent.insertUp(@key[(m + 1)/2], right)
+        @parent.insertUp(@key[(m + 1) / 2], right)
       end
     end
   end
-
-
 end

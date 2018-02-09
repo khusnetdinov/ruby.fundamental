@@ -4,7 +4,7 @@
 # Space Complexity: О(n) total, O(1) auxiliary
 # Stable: Yes
 #
-# [5, 4, 3, 1, 2].heapsort! => [1, 2, 3, 4, 5]
+# [5, 4, 3, 1, 2].heap_sort! => [1, 2, 3, 4, 5]
 
 class Array
   def swap(first, second)
@@ -17,7 +17,7 @@ class Array
   end
 
   def heap_sort
-    ((length - 2) / 2).downto(0) {|start| sift_down(start, length - 1)}
+    ((length - 2) / 2).downto(0) { |start| sift_down(start, length - 1) }
 
     (length - 1).downto(1) do |end_|
       swap 0, end_
@@ -31,9 +31,7 @@ class Array
     loop do
       child = root * 2 + 1
       break if child > end_
-      if child + 1 <= end_ and self[child] < self[child + 1]
-        child += 1
-      end
+      child += 1 if child + 1 <= end_ && self[child] < self[child + 1]
       if self[root] < self[child]
         swap child, root
         root = child

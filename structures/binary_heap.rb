@@ -6,12 +6,11 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class BinaryHeap < PriorityQueue
-
   def enqueue(obj)
     raise ContainerFull if @count == @array.length
     @count += 1
     i = @count
-    while i > 1 and @array[i/2] > obj
+    while (i > 1) && (@array[i / 2] > obj)
       @array[i] = @array[i / 2]
       i /= 2
     end
@@ -31,7 +30,7 @@ class BinaryHeap < PriorityQueue
     i = 1
     while 2 * i < @count + 1
       child = 2 * i
-      if child + 1 < @count + 1 and @array[child + 1] < @array[child]
+      if (child + 1 < @count + 1) && (@array[child + 1] < @array[child])
         child += 1
       end
       break if last <= @array[child]
@@ -39,7 +38,6 @@ class BinaryHeap < PriorityQueue
       i = child
     end
     @array[i] = last
-    return result
+    result
   end
-
 end

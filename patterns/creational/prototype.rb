@@ -12,14 +12,13 @@ class Note
   end
 
   def deep_copy
-    Marshal::load(Marshal.dump(self))
+    Marshal.load(Marshal.dump(self))
   end
 end
 
 class Clef
   # Implementation
 end
-
 
 class PrototypeManager
   def initialize
@@ -40,7 +39,6 @@ class PrototypeManager
     else
       @prototypes.delete key
     end
-
   end
 
   def get(key)

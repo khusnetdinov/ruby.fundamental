@@ -15,11 +15,11 @@ proc { |x, y, z| x + y + z }
 # Partial application of this function would return, if we passed in the first
 # two arguments, the following nested Procs:
 
-proc { |x, y| proc { |z| x + y + z} }
+proc { |x, y| proc { |z| x + y + z } }
 
 # On the other hand, currying this function would return the following nested Procs:
 
-proc { |x| proc { |y| proc { |z| x + y + z} } }
+proc { |x| proc { |y| proc { |z| x + y + z } } }
 
 # .curry returns a curried proc. If the optional arity argument is given,
 # it determines the number of arguments. A curried proc receives some arguments.
@@ -27,7 +27,7 @@ proc { |x| proc { |y| proc { |z| x + y + z} } }
 # to the original proc and returns the result. Otherwise, returns another curried proc
 # that takes the rest of arguments.
 
-l = lambda { |x, y, z| x + y + z }
+l = ->(x, y, z) { x + y + z }
 l.curry[1][2][3]
 # => 6
 
@@ -38,14 +38,13 @@ b = a[2]
 b[3]
 # => 6
 
-apply_math = -> fn, a, b { a.send fn, b }
-add = apply_math.curry.(:+)
-add.(1, 2)
+apply_math = ->(fn, a, b) { a.send fn, b }
+add = apply_math.curry.call(:+)
+add.call(1, 2)
 # => 3
 
-increment = add.curry.(1)
-increment.(1)
+increment = add.curry.call(1)
+increment.call(1)
 # => 2
-increment.(5)
+increment.call(5)
 # => 6
-

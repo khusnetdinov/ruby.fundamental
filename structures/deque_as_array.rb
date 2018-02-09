@@ -6,8 +6,7 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class DequeAsArray < QueueAsArray
-
-  alias_method :queueHead, :head
+  alias queueHead head
 
   include DequeMethods
 
@@ -15,39 +14,38 @@ class DequeAsArray < QueueAsArray
     super(size)
   end
 
-  alias_method :head, :queueHead
+  alias head queueHead
 
   def enqueueHead(obj)
     raise ContainerFull if @count == @array.length
-    if @head == 0
-      @head = @array.length - 1
+    @head = if @head == 0
+      @array.length - 1
     else
-      @head = @head - 1
+      @head - 1
     end
     @array[@head] = obj
     @count += 1
   end
 
-  alias_method :dequeueHead, :dequeue
+  alias dequeueHead dequeue
 
   def tail
     raise ContainerEmpty if @count == 0
     @array[@tail]
   end
 
-  alias_method :enqueueTail, :enqueue
+  alias enqueueTail enqueue
 
   def dequeueTail
     raise ContainerEmpty if @count == 0
     result = @array[@tail]
     @array[@tail] = nil
-    if @tail == 0
-      @tail = @array.length - 1
+    @tail = if @tail == 0
+      @array.length - 1
     else
-      @tail = @tail - 1
+      @tail - 1
     end
     @count -= 1
     result
   end
-
 end

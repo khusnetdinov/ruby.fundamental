@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Cursor < AbstractObject
-
   abstractmethod :datum
 
   abstractmethod :insertAfter
@@ -14,5 +13,4 @@ class Cursor < AbstractObject
   abstractmethod :insertBefore
 
   abstractmethod :withdraw
-
 end

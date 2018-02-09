@@ -5,7 +5,6 @@
 #
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 class AbstractObject < ::Object
-
   def initialize
     super
   end
@@ -14,16 +13,15 @@ class AbstractObject < ::Object
 
   def <=>(obj)
     if is_a?(obj.type)
-      return compareTo(obj)
+      compareTo(obj)
     elsif obj.is_a?(type)
-      return -obj.compareTo(self)
+      -obj.compareTo(self)
     else
-      return type.name <=> obj.type.name
+      type.name <=> obj.type.name
     end
   end
 
   abstractmethod :compareTo
 
   protected :compareTo
-
 end

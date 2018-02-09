@@ -2,7 +2,7 @@
 # difficult to work with. I've already given you an idea of why threads are
 # good; here's a simple program to illustrate their difficulty.
 
-shared_array = Array.new
+shared_array = []
 
 10.times.map do
   Thread.new do
@@ -22,4 +22,3 @@ puts shared_array.size
 # $ ruby  => 10000
 # $ jruby => 7521
 # $ rbx => 8541
-

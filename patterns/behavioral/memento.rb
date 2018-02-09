@@ -36,7 +36,8 @@ class Example
   attr_accessor :name, :color
 
   def initialize(name, color)
-    @name, @color = name, color
+    @name = name
+    @color = color
   end
 end
 

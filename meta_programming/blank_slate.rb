@@ -16,7 +16,7 @@
 # about removing 'reserved' methods such as `__id__` and `__send__`
 class ImBlank
   instance_methods.each do |m|
-    undef_method m unless m.to_s =~ /^__|method_missing|respond_to?/
+    undef_method m unless m.to_s.match?(/^__|method_missing|respond_to?/)
   end
 
   # rest of your code (such as your "Dynamic Proxy" implementation)

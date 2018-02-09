@@ -6,7 +6,6 @@
 # Copyright (c) 2004 by Bruno R. Preiss, P.Eng.  All rights reserved.
 
 class Stack < Container
-
   def initialize
     super
   end
@@ -16,5 +15,4 @@ class Stack < Container
   abstractmethod :pop
 
   abstractmethod :top
-
 end

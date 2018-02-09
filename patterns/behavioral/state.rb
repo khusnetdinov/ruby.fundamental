@@ -6,12 +6,11 @@
 # sets it to the be the active state. Method calls to Connection are delegated
 # to the active state object via method_missing
 
-
 module StatePattern
-  class UnknownStateException < Exception
+  class UnknownStateException < RuntimeError
   end
 
-  def StatePattern.included(base)
+  def self.included(base)
     base.extend StatePattern::ClassMethods
   end
 
@@ -44,14 +43,12 @@ module StatePattern
       new_context.current_state = state_name
       new_context.current_state_obj = klass.new(new_context, *args, &block)
     else
-      raise  UnknownStateException,"tried to transition to unknown state,#{state_name}"
+      raise UnknownStateException, "tried to transition to unknown state,#{state_name}"
     end
   end
 
   def method_missing(method, *args, &block)
-    unless @current_state_obj
-      transition_to :initial
-    end
+    transition_to :initial unless @current_state_obj
 
     if @current_state_obj
       @current_state_obj.send(method, *args, &block)
@@ -66,16 +63,15 @@ class Connection
 
   # you always need a state named initial
   state :initial do
-
     def connect
       # move to state :connected. all other args to transition_to# are passed
       # to the new state's constructor transition_to:connected, "hello from
       # initial state"
-      puts "connected"
+      puts 'connected'
     end
 
     def disconnect
-      puts "not connected yet"
+      puts 'not connected yet'
       end
   end
 
@@ -85,10 +81,11 @@ class Connection
     end
 
     def connect
-      puts "already connected"
+      puts 'already connected'
     end
+
     def disconnect
-      puts "disconnecting"
+      puts 'disconnecting'
       transition_to :initial
     end
   end
@@ -96,7 +93,7 @@ class Connection
   def reset
     # you can also change the state from outside of the state objects
     # transition_to:initial
-    puts "resetting outside a state"
+    puts 'resetting outside a state'
   end
 end
 

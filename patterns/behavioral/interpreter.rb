@@ -59,12 +59,13 @@ class Interpreter
     stack = []
 
     input.lstrip!
-    while input.length > 0
+    until input.empty?
       case input
       when /\A-?\d+(\.\d+)?/
         stack << Number.new($&.to_i)
       else
-        second, first = stack.pop(), stack.pop()
+        second = stack.pop
+        first = stack.pop
 
         case input
         when /\A\+/
@@ -90,4 +91,3 @@ end
 
 # Usage
 puts Interpreter.parse('1 + 1 + 2 - 1') # => 3
-
