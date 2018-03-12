@@ -6,6 +6,35 @@ This is repo keeps examples with description modern principles, patterns.
   - [Chinese](https://github.com/fanjieqi/ruby.fundamental)
 
 #### Content:
+  - [Ruby Gotchas](#gotchas)
+    - [Ruby can be surprising!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/ruby_can_be_surprising.rb)
+    - [Don't quote me on this, but ....](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/dont_quote_me_on_this_but.rb)
+    - [It's twue!  It's twue!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/hang_him_in_effigy.rb)
+    - [Hang him in effigy (String him up, symbolically)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/hang_him_in_effigy.rb.rb)
+    - [String... or nothing!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/string_or_nothing.rb)
+    - [Constants Aren't (Part 1/2)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/constants_arent_part1.rb)
+    - [Constants Aren't (Part 2/2)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/constants_arent_part2.rb)
+    - [Some are more equal than others](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/some_are_more_equal_than_others.rb)
+    - [=== != ==!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/about_triple_equal.rb)
+    - [and != &&](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/precedence_of_unions.rb)
+    - [or != ||](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/precedence_of_separators.rb)
+    - [Don't be so sensitive! (Part 1/4)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/dont_be_so_sensitive_part_1.rb)
+    - [Don't be so sensitive! (Part 2/4)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/dont_be_so_sensitive_part_2.rb)
+    - [Don't be so sensitive! (Part 3/4)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/dont_be_so_sensitive_part_3.rb)
+    - [Don't be so sensitive! (Part 4/4)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/dont_be_so_sensitive_part_4.rb)
+    - ['Ang onto yer @!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/ang_onto_yer_@.rb)
+    - [Look out, it’s an @@!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/look_out_its_an_@@.rb)
+    - [With init(ialize) or without it](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/with_initialize_or_without_it.rb)
+    - [Superman vs. the Invisible Man](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/superman_vs_the_invisible_man.rb)
+    - [When will it end?  (Or start?)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/when_will_it_end_or_start.rb)
+    - [getting .any?](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/getting_any?.rb)
+    - [(Un)Def Leppard](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/undef_leppard.rb)
+    - [Freeze (Ar)ray](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/freeze_array.rb)
+    - [1 is 1 ... and ever more shall be so!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/1_is_1_and_ever_more_shall_be_so.rb)
+    - [(to! || ! to!) == ?](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/bang_methods_is_dangerous.rb)
+    - [An Array of New Gotchas](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/an_array_of_new_gotchas.rb)
+    - [Making a Hash of it](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/making_a_hash_of_it.rb)
+    - [Rescue Me, Throw a Line, I'll Try to Catch It!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/rescue_me_throw_a_line_ill_try_to_catch_it.rb)
   - [Meta Programming](#meta-programming)
     - [Dynamic dispatch](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/dynamic_dispatch.rb)
     - [Dynamic method](https://github.com/khusnetdinov/ruby.fundamental/blob/master/meta_programming/dynamic_method.rb)
@@ -92,6 +121,11 @@ This is repo keeps examples with description modern principles, patterns.
       - [Binary search](#binary-search)
       - [Khuth-Morris-Pratt search](#knuth-morris-pratt-search)
   - [Interview questions](#interview)
+
+## Ruby Gotchas
+Unusual behavior of the ruby - a small details that hide from our sight for hours of hardcore debugging.
+
+by [Dave Aronson](http://www.codosaur.us)
 
 ## Meta Programming
 
