@@ -22,7 +22,9 @@ end
 
 Child2.new.add 1, 2, 3, 5
 # ArgumentError: wrong number of arguments (4 for 2)
+
 Child2.new.add 1, 2
 # => 3
+
 Child4.new.add 1, 2, 3, 5
 # => 11

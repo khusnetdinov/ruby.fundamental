@@ -1,9 +1,8 @@
-# Bubble sort: A very naive sort that keeps swapping elements until the container is sorted.
-# Requirements: Needs to be able to compare elements with <=>, and the [] []= methods should
-# be implemented for the container.
-# Time Complexity: О(n^2)
-# Space Complexity: О(n) total, O(1) auxiliary
-# Stable: Yes
+# coding: utf-8
+# Bubble sort: A very naive sort that keeps swapping elements until the container
+# is sorted. Requirements: Needs to be able to compare elements with <=>, and
+# the [] []= methods should be implemented for the container. Time Complexity:
+# О(n^2). Space Complexity: О(n) total, O(1) auxiliary. Stable: Yes.
 #
 # [5, 4, 3, 1, 2].bubble_sort! => [1, 2, 3, 4, 5]
 

@@ -1,6 +1,7 @@
 # Ruby can be surprising!
-# Though "engineered to maximize programmer happiness", with the "principle of least surprise", Ruby still has gotchas.
-# This presentation will proceed from newbie trivial gotchas, to more advanced and confusing gotchas.
+# Though "engineered to maximize programmer happiness", with the "principle of
+# least surprise", Ruby still has gotchas. This presentation will proceed from
+# newbie trivial gotchas, to more advanced and confusing gotchas.
 
 We = 2
 class Fixnum

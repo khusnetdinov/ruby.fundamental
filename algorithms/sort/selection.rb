@@ -1,7 +1,8 @@
-# Selection sort: A naive sort that goes through the container and selects the smallest element,
-# putting it at the beginning. Repeat until the end is reached.
-# Requirements: Needs to be able to compare elements with <=>, and the [] []= methods should
-# be implemented for the container.
+# coding: utf-8
+# Selection sort: A naive sort that goes through the container and selects the
+# smallest element, putting it at the beginning. Repeat until the end is reached.
+# Requirements: Needs to be able to compare elements with <=>, and the [] []=
+# methods should be implemented for the container.
 # Time Complexity: О(n^2)
 # Space Complexity: О(n) total, O(1) auxiliary
 # Stable: Yes

@@ -7,16 +7,21 @@
 #   x = false  or true
 # means
 #  (x = false) or true
-# Also, && is higher than ||, but and and or are equal, so they are evaluated left-to-right!
+# Also, && is higher than ||, but and and or are equal, so they are evaluated
+# left-to-right!
 
 x = false || true
-# => true 
+# => true
+
 x
-# => true 
+# => true
+
 # OK so far, but:
+
 x = false or true
 # => true
+
 x
 # => false
-# Return value is true but variable is false!
-# Why the mismatch?!
+
+# Return value is true but variable is false! Why the mismatch?!

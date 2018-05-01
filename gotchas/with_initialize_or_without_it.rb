@@ -1,4 +1,5 @@
-# Parent's initialize runs automagically only if child has none.  Else, parent's must be called to run.
+# Parent's initialize runs automagically only if child has none.  Else, parent's
+# must be called to run.
 
 class Parent
   def initialize

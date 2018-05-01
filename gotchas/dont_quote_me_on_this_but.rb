@@ -1,6 +1,6 @@
-# String interpolation (including special chars like \n) fails with 'single' quotes -- it requires "double" quotes.
-# (Just like in most languages with string interpolation.)
-# To avoid: use doubles whenever practical.
+# String interpolation (including special chars like \n) fails with 'single'
+# quotes -- it requires "double" quotes. (Just like in most languages with string
+# interpolation.). To avoid: use doubles whenever practical.
 
 x = 3
 
