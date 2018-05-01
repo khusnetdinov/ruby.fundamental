@@ -1,5 +1,6 @@
-# Heap sort: Uses a heap (implemented by the Containers module) to sort the collection.
-# Requirements: Needs to be able to compare elements with <=>
+# coding: utf-8
+# Heap sort: Uses a heap (implemented by the Containers module) to sort the
+# collection. Requirements: Needs to be able to compare elements with <=>
 # Time Complexity: О(n^2)
 # Space Complexity: О(n) total, O(1) auxiliary
 # Stable: Yes

@@ -38,7 +38,6 @@ This is repo keeps examples with description modern principles, patterns.
     - [instance_eval with access to outside scope](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/instance_eval.rb)
     - [diffs in lambda/proc/block/method](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/diff_proc_block_lambda.rb)
     - [braces vs. do-end (TL;DR: braces high precedence, do-end low)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/braces_vs_do_end.rb)
-    - [private/protected not same as in other languages](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/private_protected.rb)
     - [Variable hoisting in Ruby](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/hoisting.rb)
     - [private methods are accessible by the instance, not the whole class](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/private_method.rb)
     - [class Foo::Bar, defined outside Module Foo, won’t see inside Foo](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/foo_bar.rb)

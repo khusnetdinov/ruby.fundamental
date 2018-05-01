@@ -1,7 +1,8 @@
-# In Ruby, throw and catch are NOT for exceptions!
-# They are advanced flow control, to exit deep nesting.
-# Ruby uses raise and rescue for exceptions.
-# /* JAVA: */
+# In Ruby, throw and catch are NOT for exceptions! They are advanced flow control,
+# to exit deep nesting. Ruby uses raise and rescue for exceptions.
+
+# JAVA:
+
 try {
   throw new MyException("blah");
 } catch(MyException e) {

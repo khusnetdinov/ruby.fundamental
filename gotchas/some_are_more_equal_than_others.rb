@@ -9,6 +9,7 @@
 
 1 == 1.0
 # => true
+
 1.eql? 1.0
 # => false
 
@@ -16,9 +17,12 @@ a = "foo"
 b = "foo"
 a == b
 # => true
+
 a.eql? b
 # => true
+
 a.equal? b
 # => false
+
 a.equal? a
 # => true

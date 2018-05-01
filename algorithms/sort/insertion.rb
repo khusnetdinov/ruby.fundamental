@@ -1,7 +1,7 @@
+# coding: utf-8
 # Insertion sort: Elements are inserted sequentially into the right position.
-# Requirements: Needs to be able to compare elements with <=>, and the [] []= methods should
-# be implemented for the container.
-# Time Complexity: О(n^2)
+# Requirements: Needs to be able to compare elements with <=>, and the [] []=
+# methods should be implemented for the container. Time Complexity: О(n^2)
 # Space Complexity: О(n) total, O(1) auxiliary
 # Stable: Yes
 #

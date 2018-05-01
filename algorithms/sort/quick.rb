@@ -1,6 +1,7 @@
+# coding: utf-8
 # Shell sort: Similar approach as insertion sort but slightly better.
-# Requirements: Needs to be able to compare elements with <=>, and the [] []= methods should
-# be implemented for the container.
+# Requirements: Needs to be able to compare elements with <=>, and the [] []=
+# methods should be implemented for the container.
 # Time Complexity: О(n^2)
 # Space Complexity: О(n) total, O(1) auxiliary
 # Stable: Yes

@@ -1,6 +1,7 @@
-# Mergesort: A stable divide-and-conquer sort that sorts small chunks of the container and then merges them together.
-# Returns an array of the sorted elements.
-# Requirements: Container should implement []
+# coding: utf-8
+# Mergesort: A stable divide-and-conquer sort that sorts small chunks of the
+# container and then merges them together. Returns an array of the sorted
+# elements. Requirements: Container should implement []
 # Time Complexity: О(n log n) average and worst-case
 # Space Complexity: О(n) auxiliary
 # Stable: Yes

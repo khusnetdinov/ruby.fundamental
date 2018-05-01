@@ -1,7 +1,7 @@
-# Variables declared in blocks passed to iterators (e.g., times or each) are undefined at the top of each iteration!
-# Iterators call the block repeatedly, so vars are out of scope again after each call.
-# Built-in looping constructs (e.g., while or for) are OK.
-# (Or declare vars before block.)
+# Variables declared in blocks passed to iterators (e.g., times or each) are
+# undefined at the top of each iteration! Iterators call the block repeatedly,
+# so vars are out of scope again after each call. Built-in looping constructs
+# (e.g., while or for) are OK. (Or declare vars before block.)
 
 3.times do |loop_num|
   sum ||= 0

@@ -1,4 +1,5 @@
-# Lambda's also enforce a closure and so are able to keep their context across objects, as demonstrated below:
+# Lambda's also enforce a closure and so are able to keep their context across
+# objects, as demonstrated below:
 
 require 'json'
 

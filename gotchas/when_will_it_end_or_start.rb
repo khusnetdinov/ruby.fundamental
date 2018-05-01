@@ -1,10 +1,12 @@
+# coding: utf-8
 # In "standard" regexps:
 # ^ is start and $ is end...
 # of the whole string.
 # Ruby’s regexes default to multiline, so:
 # ^ is start and $ is end...
 # of any line!
-# \A is start and \Z is end of the whole string.  (Or \z to include any newline… which is another gotcha!)
+# \A is start and \Z is end of the whole string.  (Or \z to include any newline…
+# which is another gotcha!)
 
 str = "One\nTwo\nThree"
 

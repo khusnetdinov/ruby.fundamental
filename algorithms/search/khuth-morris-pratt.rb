@@ -1,11 +1,12 @@
-# Knuth-Morris-Pratt Algorithm substring search algorithm: Efficiently finds the starting position of a
-# substring in a string. The algorithm calculates the best position to resume searching from if a failure
-# occurs.
+# Knuth-Morris-Pratt Algorithm substring search algorithm: Efficiently finds the
+# starting position of a substring in a string. The algorithm calculates the best
+# position to resume searching from if a failure occurs.
 #
-# The method returns the index of the starting position in the string where the substring is found. If there
-# is no match, nil is returned.
+# The method returns the index of the starting position in the string where the
+# substring is found. If there is no match, nil is returned.
 #
-# Complexity: O(n + k), where n is the length of the string and k is the length of the substring.
+# Complexity: O(n + k), where n is the length of the string and k is the length
+# of the substring.
 #
 # "ABC ABCDAB ABCDABCDABDE".kmp_search("ABCDABD") #=> 15
 # "ABC ABCDAB ABCDABCDABDE".kmp_search("ABCDEF") #=> nil
