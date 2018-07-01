@@ -25,7 +25,7 @@ This is repo keeps examples with description modern principles, patterns.
     - [With init(ialize) or without it](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/with_initialize_or_without_it.rb)
     - [Superman vs. the Invisible Man](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/superman_vs_the_invisible_man.rb)
     - [When will it end?  (Or start?)](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/when_will_it_end_or_start.rb)
-    - [getting_any?](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/getting_any?.rb)
+    - [getting_any?](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/getting_any.rb)
     - [(Un)Def Leppard](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/undef_leppard.rb)
     - [Freeze (Ar)ray](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/freeze_array.rb)
     - [1 is 1 ... and ever more shall be so!](https://github.com/khusnetdinov/ruby.fundamental/blob/master/gotchas/1_is_1_and_ever_more_shall_be_so.rb)
@@ -254,6 +254,8 @@ ISP is intended to keep a system decoupled and thus easier to refactor, change, 
 One should Depend upon Abstractions, Do not depend upon concretions.
 
 Refers to a specific form of decoupling software modules. When following this principle, the conventional dependency relationships established from high-level, policy-setting modules to low-level, dependency modules are inverted (i.e. reversed), thus rendering high-level modules independent of the low-level module implementation details.
+
+[See example](https://github.com/khusnetdinov/ruby.fundamental/blob/master/solid/dependency_inversion.rb)
 
 #### Code and articles were taken from resources:
 
