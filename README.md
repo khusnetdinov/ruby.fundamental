@@ -5,7 +5,7 @@
 This is repo keeps examples with description modern principles, patterns.
 
 #### Web docs:
-  - [Web deocs](https://github.com/howtohireme/ruby.fundamental)
+  - [Web docs](https://github.com/howtohireme/ruby.fundamental)
 
 #### Translations:
   - [Chinese](https://github.com/fanjieqi/ruby.fundamental)
