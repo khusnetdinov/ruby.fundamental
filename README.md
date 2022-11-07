@@ -215,6 +215,8 @@ The problem with this is that there is no simple way to say with absolute certai
 
 * [https://csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/](https://csinaction.com/2014/10/10/multithreading-in-the-mri-ruby-interpreter/)
 
+* https://www.scaler.com/topics/data-structures/
+
 ## Solid
 
 In computer programming, SOLID (single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion) is a mnemonic acronym introduced by Michael Feathers for the "first five principles" named by Robert C. Martin in the early 2000s that stands for five basic principles of object-oriented programming and design. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time. The principles of SOLID are guidelines that can be applied while working on software to remove code smells by causing the programmer to refactor the software's source code until it is both legible and extensible. It is part of an overall strategy of agile and Adaptive Software Development.
